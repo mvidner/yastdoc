@@ -1,0 +1,35 @@
+#!/usr/bin/ruby
+
+require "cgi/util"
+require "sinatra"
+require "yastdoc/search"
+
+datadir = File.expand_path("../../data", __FILE__)
+search = Yastdoc::Search.new(datadir)
+
+get "/" do
+  '<title>YaST doc</title>
+  <p>Which YaST API would you like to see documentation for?
+  <form action="/" method="post">
+    <input type="text" name="q" />
+  </form>'
+end
+
+def escape(s)
+  CGI::escape_html(s)
+end
+
+post "/" do
+  q = params["q"]
+
+  results = search.query(q)
+
+  page = "<title>Search results for #{escape(q)}</title>\n"
+  page << "<p>Number of results: #{results.size}</p>\n"
+
+  results.each do |r|
+    page << "<p><a href='#{r.url}'>#{r.text}</a>\n"
+  end
+
+  page
+end
