@@ -8,11 +8,12 @@ datadir = File.expand_path("../../data", __FILE__)
 search = Yastdoc::Search.new(datadir)
 
 get "/" do
-  '<title>YaST doc</title>
+  "<title>YaST doc</title>
   <p>Which YaST API would you like to see documentation for?
-  <form action="/" method="post">
-    <input type="text" name="q" />
-  </form>'
+  <form action='/' method='post'>
+    <input type='text' name='q' tabindex='1' value='#{params["q"]}' />
+    <button type='submit'>OK</button>
+  </form>"
 end
 
 def escape(s)
