@@ -7,13 +7,18 @@ require "yastdoc/search"
 datadir = File.expand_path("../../data", __FILE__)
 search = Yastdoc::Search.new(datadir)
 
+MYURL = "https://github.com/mvidner/yastdoc"
+def footer
+  "\n<hr />\n" \
+  "<small>Powered by <a href='#{MYURL}'>Yastdoc</a></small>\n"
+end
+
 get "/" do
   "<title>YaST doc</title>
   <p>Which YaST API would you like to see documentation for?
   <form action='/' method='post'>
     <input type='text' name='q' tabindex='1' value='#{params["q"]}' />
-    <button type='submit'>OK</button>
-  </form>"
+  </form>#{footer}"
 end
 
 def escape(s)
@@ -25,12 +30,14 @@ post "/" do
 
   results = search.query(q)
 
-  page = "<title>Search results for #{escape(q)}</title>\n"
-  page << "<p>Number of results: #{results.size}</p>\n"
+  heading = "Search results for '#{escape(q)}' (#{results.size})"
+  page = "<title>#{heading}</title>\n"
+  page << "<p><b>#{heading}</b></p>\n"
 
   results.each do |r|
     page << "<p><a href='#{r.url}'>#{r.text}</a>\n"
   end
+  page << footer
 
   page
 end
