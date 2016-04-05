@@ -1,6 +1,2 @@
-The `*.list` files have been procuded by hand with
-
-```rb
-cd .../yast/yast-ruby-bindings
-yard doc --quiet --list | cut -d' ' -f2 > yast-ruby-bindings.list
-```
+The `*.list` files are produced from a Git checkout (which you need to have
+beforehand) with the `./update` script, which uses [YARD](http://yardoc.org/)
