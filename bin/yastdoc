@@ -1,6 +1,5 @@
 #!/usr/bin/ruby
 
-require "cgi/util"
 require "sinatra"
 require "yastdoc/search"
 
@@ -13,10 +12,6 @@ def footer
   "<small>Powered by <a href='#{MYURL}'>Yastdoc</a></small>\n"
 end
 
-def escape(s)
-  CGI::escape_html(s)
-end
-
 get "/" do
   q = params["q"]
 
@@ -25,7 +20,7 @@ get "/" do
   if q
     results = search.query(q)
 
-    heading = "Results for '#{escape(q)}' (#{results.size}) - "
+    heading = "Results for '#{escape_html(q)}' (#{results.size}) - "
   end
 
   heading += "Yast API Search"
