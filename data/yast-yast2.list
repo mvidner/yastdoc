@@ -68,6 +68,7 @@ CWM::Tab#label
 CWM::Tabs
 CWM::Tabs#contents
 CWM::Tabs#handle
+CWM::Tabs#help
 CWM::Tabs#init
 CWM::Tabs#initial_tab_id
 CWM::Tabs#initialize
@@ -866,8 +867,11 @@ Yast::InstallationClass
 Yast::InstallationClass#Initialize
 Yast::InstallationClass#Installation
 Yast::InstallationClass#boot
+Yast::InstallationClass#finish_restarting!
 Yast::InstallationClass#main
 Yast::InstallationClass#no_x11
+Yast::InstallationClass#restart!
+Yast::InstallationClass#restarting?
 Yast::InstallationClass#text_fallback
 Yast::InstallationClass#x11_setup_needed
 Yast::Integer

@@ -109,6 +109,7 @@ Yast::InstLanClient#main
 Yast::InstNetprobeClient
 Yast::InstNetprobeClient#main
 Yast::InstallInfConvertor
+Yast::InstallInfConvertor#AllowUdevModify
 Yast::InstallInfConvertor#initialize
 Yast::InstallInfConvertor#write_netconfig
 Yast::InstallInfConvertor::BASH_PATH
@@ -163,8 +164,6 @@ Yast::LanItemsClass#Commit
 Yast::LanItemsClass#DeleteItem
 Yast::LanItemsClass#FindAndSelect
 Yast::LanItemsClass#FindDeviceIndex
-Yast::LanItemsClass#FindMatchingDevice
-Yast::LanItemsClass#FreeAliases
 Yast::LanItemsClass#FreeDevices
 Yast::LanItemsClass#GetBondSlaves
 Yast::LanItemsClass#GetBondableInterfaces
@@ -172,7 +171,6 @@ Yast::LanItemsClass#GetBridgeableInterfaces
 Yast::LanItemsClass#GetCurrentMap
 Yast::LanItemsClass#GetCurrentName
 Yast::LanItemsClass#GetCurrentType
-Yast::LanItemsClass#GetDefaultsForHW
 Yast::LanItemsClass#GetDescr
 Yast::LanItemsClass#GetDeviceMap
 Yast::LanItemsClass#GetDeviceName
@@ -240,6 +238,7 @@ Yast::LanItemsClass#bridge_ports=
 Yast::LanItemsClass#chan_mode
 Yast::LanItemsClass#chan_mode=
 Yast::LanItemsClass#createS390Device
+Yast::LanItemsClass#createUdevFromIfaceName
 Yast::LanItemsClass#current
 Yast::LanItemsClass#current=
 Yast::LanItemsClass#current_renamed?
@@ -255,10 +254,12 @@ Yast::LanItemsClass#driver_options=
 Yast::LanItemsClass#enableCurrentEditButton
 Yast::LanItemsClass#ethtool_options
 Yast::LanItemsClass#ethtool_options=
+Yast::LanItemsClass#export
 Yast::LanItemsClass#find_configured
 Yast::LanItemsClass#force_restart
 Yast::LanItemsClass#force_restart=
 Yast::LanItemsClass#getCurrentItem
+Yast::LanItemsClass#getDeviceName
 Yast::LanItemsClass#getNetworkInterfaces
 Yast::LanItemsClass#getUdevFallback
 Yast::LanItemsClass#hotplug
@@ -379,20 +380,6 @@ Yast::LanItemsClass#wl_wpa_psk
 Yast::LanItemsClass#wl_wpa_psk=
 Yast::LanItemsClass#write
 Yast::LanItemsClass::TRISTATE_TO_S
-Yast::LanUdevAuto
-Yast::LanUdevAutoClass
-Yast::LanUdevAutoClass#AllowUdevModify
-Yast::LanUdevAutoClass#Export
-Yast::LanUdevAutoClass#GetDevnameByMAC
-Yast::LanUdevAutoClass#Import
-Yast::LanUdevAutoClass#InstallInfParameter
-Yast::LanUdevAutoClass#InstallationParameter
-Yast::LanUdevAutoClass#KernelCmdlineParameter
-Yast::LanUdevAutoClass#Write
-Yast::LanUdevAutoClass#createUdevFromIfaceName
-Yast::LanUdevAutoClass#getDeviceName
-Yast::LanUdevAutoClass#main
-Yast::LanUdevAutoClass#oldStyle
 Yast::NetHwDetection
 Yast::NetHwDetectionClass
 Yast::NetHwDetectionClass#DuplicateIP
@@ -404,6 +391,7 @@ Yast::NetHwDetectionClass#main
 Yast::Network
 Yast::NetworkAutoYast
 Yast::NetworkAutoYast#create_udevs
+Yast::NetworkAutoYast#initialize
 Yast::NetworkAutoYast#merge_configs
 Yast::NetworkAutoYast#set_network_service
 Yast::NetworkAutoconfiguration
@@ -724,9 +712,6 @@ Yast::RemoteClass#IsEnabled
 Yast::RemoteClass#Propose
 Yast::RemoteClass#Read
 Yast::RemoteClass#Reset
-Yast::RemoteClass#ServerArgsRemoveOpt
-Yast::RemoteClass#SetSecurityType
-Yast::RemoteClass#SetServerArgsOpt
 Yast::RemoteClass#Summary
 Yast::RemoteClass#Write
 Yast::RemoteClass#WriteXinetd
