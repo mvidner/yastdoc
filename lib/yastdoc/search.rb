@@ -29,7 +29,7 @@ module Yastdoc
       end
       found.map do |term, project|
         # Yast::Logger#log -> Yast/Logger:log
-        path = term.sub(/::/, "/").sub("#", ":")
+        path = term.gsub(/::/, "/").sub("#", ":")
         Result.new(term, "http://www.rubydoc.info/github/#{project}/#{path}")
       end
     end
