@@ -127,6 +127,10 @@ Yast::Convert.to_symbol
 Yast::Convert.to_term
 Yast::CoreExt
 Yast::CoreExt::AnsiString
+Yast::Debugger
+Yast::Debugger.installed?
+Yast::Debugger.start
+Yast::Debugger.start_from_env
 Yast::Exportable
 Yast::Exportable#publish
 Yast::Exportable#published_functions
@@ -213,6 +217,11 @@ Yast::Path#initialize
 Yast::Path#size
 Yast::Path#to_s
 Yast::Path.from_string
+Yast::Profiler
+Yast::Profiler.start
+Yast::Profiler.start_from_env
+Yast::Profiler.stop
+Yast::Profiler::RESULT_PATH
 Yast::RSpec
 Yast::RSpec::Matchers
 Yast::RSpec::Matchers#path_matching
@@ -250,6 +259,7 @@ Yast::Term#value
 Yast::UIShortcuts
 Yast::UIShortcuts::UI_TERMS
 Yast::WFM
+Yast::WFM#call
 Yast::WFM.Args
 Yast::WFM.CallFunction
 Yast::WFM.ClientExists
@@ -265,7 +275,8 @@ Yast::WFM.SCROpen
 Yast::WFM.SCRSetDefault
 Yast::WFM.SetLanguage
 Yast::WFM.Write
-Yast::WFM.call
+Yast::WFM.ask_to_run_debugger?
+Yast::WFM.internal_error_msg
 Yast::WFM.scr_chrooted?
 Yast::Y2Logger
 Yast::Y2Logger#add
