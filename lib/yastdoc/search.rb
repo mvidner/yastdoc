@@ -7,12 +7,15 @@ module Yastdoc
     # @param index_dir [String]
     def initialize(index_dir)
       @index = []
-      Dir.glob("#{index_dir}/*.list") do |list_fn|
-        basename = Pathname.new(list_fn).basename(".list")
-        project = "yast/#{basename}".freeze
+      Dir.chdir(index_dir) do
+        Dir.glob("**/*.list") do |list_fn|
+          # eg:
+          # github/yast/yast-ruby-bindings
+          project = list_fn.chomp(".list").freeze
 
-        File.readlines(list_fn).map(&:chomp).each do |term|
-          @index << [term, project]
+          File.readlines(list_fn).map(&:chomp).each do |term|
+            @index << [term, project]
+          end
         end
       end
     end
@@ -30,7 +33,7 @@ module Yastdoc
       found.map do |term, project|
         # Yast::Logger#log -> Yast/Logger:log
         path = term.gsub(/::/, "/").sub("#", ":")
-        Result.new(term, "http://www.rubydoc.info/github/#{project}/#{path}")
+        Result.new(term, "http://www.rubydoc.info/#{project}/#{path}")
       end
     end
   end
