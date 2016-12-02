@@ -1,14 +1,24 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'yastdoc'
+set :repo_url, 'https://github.com/mvidner/yastdoc.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
+dir = '/home/jenkins/capistrano'
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, dir
+
+task :restart_services do
+  on roles(:app), in: :sequence do
+    execute "pkill -f bin/yastdoc || true"
+    execute "cd #{dir}/current; LANG=en_US screen -S yastdoc -d -m rake run"
+  end
+end
+
+after "deploy:finishing", :restart_services
 
 # Default value for :scm is :git
 # set :scm, :git
