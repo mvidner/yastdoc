@@ -32,6 +32,11 @@ get "/" do
     <p>Search YaST API:
     <input type='text' name='q' value='#{q}' autofocus />
     <small>It's a Regexp. Use <tt>\\b</tt> for a word boundary.</small>
+  </form>
+
+  <form method='get' action='http://www.rubydoc.info/search/stdlib/core'>
+    <p>Search Ruby core:
+    <input type='search' name='q' id='search_box' size='30' value='' />
   </form>\n"
 
   page << "<hr />\n" unless results.empty?
