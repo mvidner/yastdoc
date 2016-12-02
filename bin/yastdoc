@@ -31,6 +31,7 @@ get "/" do
   <form action='/' method='get'>
     <p>Search YaST API:
     <input type='text' name='q' value='#{q}' autofocus />
+    <small>It's a Regexp. Use <tt>\\b</tt> for a word boundary.</small>
   </form>\n"
 
   page << "<hr />\n" unless results.empty?
