@@ -1,6 +1,6 @@
 desc "Run the server"
 task :run do
-  sh "RUBYLIB=lib bin/yastdoc"
+  sh "bin/yastdoc"
 end
 
 task :default => :run

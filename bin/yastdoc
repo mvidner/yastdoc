@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
 require "sinatra"
+$LOAD_PATH << File.expand_path("../../lib", __FILE__)
 require "yastdoc/search"
 
 datadir = File.expand_path("../../data", __FILE__)
