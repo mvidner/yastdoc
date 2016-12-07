@@ -13,6 +13,11 @@ def footer
   "<small>Powered by <a href='#{MYURL}'>Yastdoc</a></small>\n"
 end
 
+configure do
+  enable :static
+  set :public_folder, File.expand_path("../../public", __FILE__)
+end
+
 get "/" do
   q = params["q"]
 
