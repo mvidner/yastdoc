@@ -14,6 +14,7 @@ set :deploy_to, dir
 task :restart_services do
   on roles(:app), in: :sequence do
     execute "pkill -f bin/yastdoc || true"
+    execute "sleep 2"
     execute "cd #{dir}/current; LANG=en_US screen -S yastdoc -d -m rake run"
   end
 end
