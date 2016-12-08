@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+# A helper to
+# - generate documentation from a github checkout
+#   that includes a .dochost.yml delaration
+# - upload it to a doc host
+
+# .dochost.yml examples:
+
+# project: github/yast/yast-core
+# run:
+#   - make -f Makefile.cvs
+#   - make -C autodocs
+# result: autodocs
+
+# project: github/openSUSE/linuxrc
+# run:
+#   - doxygen -g
+#   - doxygen Doxyfile
+# result: html
+
+require "yaml"
+require "fileutils"
+
+config = YAML.load_file ".dochost.yml"
+
+def run(cmd)
+  puts "RUNNING #{cmd}"
+  system(cmd) or raise
+end
+
+Array(config["run"]).each do |cmd|
+  run cmd
+end
+
+HOST="jenkins@mvidner-vm3.suse.cz"
+project = config["project"]
+cap_target = "capistrano/shared/public/dochost/#{project}/master"
+
+FileUtils.cd(config["result"]) do
+  run "ssh #{HOST} rm -rf   #{cap_target}"
+  run "ssh #{HOST} mkdir -p #{cap_target}"
+  run "scp -pr .    #{HOST}:#{cap_target}"
+end
