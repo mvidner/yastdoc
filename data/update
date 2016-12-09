@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+BASEDIR=$HOME/github-checkout
+for YO in $BASEDIR/*/*/.yardopts; do
+    DIR=${YO%/*}
+    LIST=github/${DIR#$BASEDIR}.list
+    mkdir -p ${LIST%/*}
+    echo "$DIR"
+    (
+        cd $DIR
+        yard doc --db /tmp/.yardoc --quiet --list
+    ) | cut -d' ' -f2 | LANG=POSIX sort > $LIST
+done

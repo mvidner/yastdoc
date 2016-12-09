@@ -1566,7 +1566,6 @@ Yast::PackagesProposal
 Yast::PackagesProposalClass
 Yast::PackagesProposalClass#AddResolvables
 Yast::PackagesProposalClass#CheckParams
-Yast::PackagesProposalClass#CreateEmptyStructureIfMissing
 Yast::PackagesProposalClass#GetAllResolvables
 Yast::PackagesProposalClass#GetAllResolvablesForAllTypes
 Yast::PackagesProposalClass#GetResolvables

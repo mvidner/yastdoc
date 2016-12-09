@@ -350,9 +350,7 @@ Yast::PackagesClass#addAdditionalPackage
 Yast::PackagesClass#architecturePackages
 Yast::PackagesClass#boardPackages
 Yast::PackagesClass#default_patterns
-Yast::PackagesClass#graphicPackages
 Yast::PackagesClass#group_products_by_status
-Yast::PackagesClass#javaPackages
 Yast::PackagesClass#kernelCmdLinePackages
 Yast::PackagesClass#log_software_selection
 Yast::PackagesClass#main
@@ -366,6 +364,7 @@ Yast::PackagesClass#sourceAccessPackages
 Yast::PackagesClass#vnc_packages
 Yast::PackagesClass::AUTOYAST_X11_TAGS
 Yast::PackagesClass::DEFAULT_WM
+Yast::PackagesClass::GRAPHIC_PACKAGES
 Yast::PackagesClass::LOG_RESOLVABLE_STATUS
 Yast::PackagesClass::LOG_RESOLVABLE_TRANSACT_BY
 Yast::PackagesClass::REMOTE_X11_BASE_TAGS
