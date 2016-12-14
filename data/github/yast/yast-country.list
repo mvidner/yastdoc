@@ -187,7 +187,10 @@ Yast::TimezoneClass#UpdateTimezone
 Yast::TimezoneClass#get_lang2tz
 Yast::TimezoneClass#get_zonemap
 Yast::TimezoneClass#main
+Yast::TimezoneClass#product_default_timezone
+Yast::TimezoneClass#readonly
 Yast::TimezoneClass#utc_only
+Yast::TimezoneClass::FALLBACK_PRODUCT_DEFAULT_TIMEZONE
 Yast::TimezoneClient
 Yast::TimezoneClient#TimezoneListHandler
 Yast::TimezoneClient#TimezoneRead
