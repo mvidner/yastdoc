@@ -25,6 +25,7 @@ CFA::Grub2::Default::KernelParams#remove_parameter
 CFA::Grub2::Default::KernelParams#replace
 CFA::Grub2::Default::KernelParams#serialize
 CFA::Grub2::Default::KernelParams::ParamTree
+CFA::Grub2::Default::KernelParams::ParamTree#all_data
 CFA::Grub2::Default::KernelParams::ParamTree#data
 CFA::Grub2::Default::KernelParams::ParamTree#initialize
 CFA::Grub2::Default::KernelParams::ParamTree#to_string

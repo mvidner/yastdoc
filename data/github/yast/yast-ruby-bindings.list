@@ -1,10 +1,7 @@
+Argument
 Yast
-Yast#arg_ref
 Yast#copy_arg
 Yast#deep_copy
-Yast#fun_ref
-Yast#path
-Yast#term
 Yast.%%
 Yast.-------------
 Yast.-------------
@@ -260,6 +257,7 @@ Yast::UIShortcuts
 Yast::UIShortcuts::UI_TERMS
 Yast::WFM
 Yast::WFM#call
+Yast::WFM#self
 Yast::WFM.Args
 Yast::WFM.CallFunction
 Yast::WFM.ClientExists
@@ -275,11 +273,15 @@ Yast::WFM.SCROpen
 Yast::WFM.SCRSetDefault
 Yast::WFM.SetLanguage
 Yast::WFM.Write
-Yast::WFM.ask_to_run_debugger?
-Yast::WFM.internal_error_msg
 Yast::WFM.scr_chrooted?
+Yast::WFM.scr_root
 Yast::Y2Logger
 Yast::Y2Logger#add
 Yast::Y2Logger#initialize
 Yast::Y2Logger::CALL_FRAME
+Yast::Y2StartHelpers
+Yast::Y2StartHelpers.help
+Yast::Y2StartHelpers.parse_arguments
+Yast::Y2StartHelpers.setup_signals
+Yast::Y2StartHelpers::LOG_LOCATIONS
 Yast::YReference

@@ -70,6 +70,7 @@ Bootloader::ConfigDialog#run
 Bootloader::ConsoleWidget
 Bootloader::ConsoleWidget#contents
 Bootloader::ConsoleWidget#handle
+Bootloader::ConsoleWidget#help
 Bootloader::ConsoleWidget#init
 Bootloader::ConsoleWidget#initialize
 Bootloader::ConsoleWidget#store
@@ -90,6 +91,7 @@ Bootloader::DeviceMap#initialize
 Bootloader::DeviceMap#propose
 Bootloader::DeviceMap#read
 Bootloader::DeviceMap#size
+Bootloader::DeviceMap#to_hash
 Bootloader::DeviceMap#to_s
 Bootloader::DeviceMap#write
 Bootloader::DeviceMapDialog
@@ -136,8 +138,6 @@ Bootloader::Grub2#propose
 Bootloader::Grub2#read
 Bootloader::Grub2#stage1
 Bootloader::Grub2#summary
-Bootloader::Grub2#trusted_boot
-Bootloader::Grub2#trusted_boot=
 Bootloader::Grub2#write
 Bootloader::Grub2#write_sysconfig
 Bootloader::Grub2Base
@@ -155,6 +155,8 @@ Bootloader::Grub2Base#pmbr_setup
 Bootloader::Grub2Base#propose
 Bootloader::Grub2Base#read
 Bootloader::Grub2Base#sections
+Bootloader::Grub2Base#trusted_boot
+Bootloader::Grub2Base#trusted_boot=
 Bootloader::Grub2Base#write
 Bootloader::Grub2EFI
 Bootloader::Grub2EFI#initialize
@@ -191,6 +193,9 @@ Bootloader::HiddenMenuWidget#help
 Bootloader::HiddenMenuWidget#init
 Bootloader::HiddenMenuWidget#initialize
 Bootloader::HiddenMenuWidget#label
+Bootloader::InvalidSerialConsoleArguments
+Bootloader::InvalidSerialConsoleArguments#initialize
+Bootloader::InvalidSerialConsoleArguments::MESSAGE
 Bootloader::KernelAppendWidget
 Bootloader::KernelAppendWidget#help
 Bootloader::KernelAppendWidget#init
@@ -228,6 +233,7 @@ Bootloader::MBRUpdate#run
 Bootloader::MainDialog
 Bootloader::MainDialog#run
 Bootloader::MainDialog#run_auto
+Bootloader::NoRoot
 Bootloader::NoneBootloader
 Bootloader::NoneBootloader#name
 Bootloader::NoneBootloader#summary

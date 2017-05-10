@@ -24,6 +24,7 @@ Registration::Addon#updates_addon?
 Registration::Addon.find_all
 Registration::Addon.registered
 Registration::Addon.registered_not_installed
+Registration::Addon.reset!
 Registration::Addon.selected
 Registration::ConnectHelpers
 Registration::ConnectHelpers.ask_import_ssl_certificate
@@ -116,6 +117,7 @@ Registration::RegistrationUI#install_updates?
 Registration::RegistrationUI#migration_products
 Registration::RegistrationUI#register_addons
 Registration::RegistrationUI#register_system_and_base_product
+Registration::RegistrationUI#registered_addons_to_rollback
 Registration::RegistrationUI#synchronize_products
 Registration::RegistrationUI#update_addons
 Registration::RegistrationUI#update_base_product
@@ -309,10 +311,6 @@ Registration::UI::AddonSelectionRegistrationDialog
 Registration::UI::AddonSelectionRegistrationDialog#initialize
 Registration::UI::AddonSelectionRegistrationDialog#run
 Registration::UI::AddonSelectionRegistrationDialog.run
-Registration::UI::AddonSelectionReregistrationDialog
-Registration::UI::AddonSelectionReregistrationDialog#initialize
-Registration::UI::AddonSelectionReregistrationDialog#run
-Registration::UI::AddonSelectionReregistrationDialog.run
 Registration::UI::AutoyastAddonDialog
 Registration::UI::AutoyastAddonDialog#initialize
 Registration::UI::AutoyastAddonDialog#run
@@ -340,7 +338,6 @@ Registration::UI::BaseSystemRegistrationDialog#register_local_handler
 Registration::UI::BaseSystemRegistrationDialog#register_scc_handler
 Registration::UI::BaseSystemRegistrationDialog#registration
 Registration::UI::BaseSystemRegistrationDialog#registration=
-Registration::UI::BaseSystemRegistrationDialog#reregister_addons_handler
 Registration::UI::BaseSystemRegistrationDialog#run
 Registration::UI::BaseSystemRegistrationDialog#skip_registration_handler
 Registration::UI::BaseSystemRegistrationDialog.run
@@ -378,6 +375,15 @@ Registration::UI::MigrationSelectionDialog#run
 Registration::UI::MigrationSelectionDialog#selected_migration
 Registration::UI::MigrationSelectionDialog#selected_migration=
 Registration::UI::MigrationSelectionDialog.run
+Registration::UI::NotInstalledProductsDialog
+Registration::UI::NotInstalledProductsDialog#initialize
+Registration::UI::NotInstalledProductsDialog#registration
+Registration::UI::NotInstalledProductsDialog#registration=
+Registration::UI::NotInstalledProductsDialog#registration_ui
+Registration::UI::NotInstalledProductsDialog#registration_ui=
+Registration::UI::NotInstalledProductsDialog#run
+Registration::UI::NotInstalledProductsDialog.run
+Registration::UI::NotInstalledProductsDialog::REGISTRATION_CHECK_MSG
 Registration::UI::RegisteredSystemDialog
 Registration::UI::RegisteredSystemDialog#addons
 Registration::UI::RegisteredSystemDialog#initialize
@@ -416,6 +422,16 @@ Registration::UrlHelpers.slp_discovery_feedback
 Registration::UrlHelpers.slp_service_url
 Registration::UrlHelpers::BOOT_PARAM
 Registration::UrlHelpers::SLP_SERVICE
+Registration::Widgets
+Registration::Widgets::RegistrationCode
+Registration::Widgets::RegistrationCode#help
+Registration::Widgets::RegistrationCode#init
+Registration::Widgets::RegistrationCode#initialize
+Registration::Widgets::RegistrationCode#label
+Registration::Widgets::RegistrationCode#register
+Registration::Widgets::RegistrationCode#store
+Registration::Widgets::RegistrationCode#validate
+Registration::Widgets::RegistrationCode::VALID_URL_SCHEMES
 Yast
 Yast::DiscoverRegistrationServicesClient
 Yast::DiscoverRegistrationServicesClient#initialize
