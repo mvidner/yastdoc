@@ -375,6 +375,7 @@ Yast::BootStorageClass#mbr_disk=
 Yast::BootStorageClass#possible_locations_for_stage1
 Yast::BootStorageClass#prep_partitions
 Yast::BootStorageClass#separated_boot?
+Yast::BootStorageClass#storage_changed?
 Yast::BootSupportCheck
 Yast::BootSupportCheckClass
 Yast::BootSupportCheckClass#StringProblems

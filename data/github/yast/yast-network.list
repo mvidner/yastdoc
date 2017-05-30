@@ -113,8 +113,6 @@ Yast::InstDoNetTestClient#make_dialog
 Yast::InstDoNetTestClient#mark_label
 Yast::InstDoNetTestClient#show_result
 Yast::InstDoNetTestClient#wait_for_test
-Yast::InstInstallInfClient
-Yast::InstInstallInfClient#main
 Yast::InstLanClient
 Yast::InstLanClient#main
 Yast::InstallInfConvertor
