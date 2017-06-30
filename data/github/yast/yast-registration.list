@@ -27,6 +27,7 @@ Registration::Addon.registered_not_installed
 Registration::Addon.reset!
 Registration::Addon.selected
 Registration::ConnectHelpers
+Registration::ConnectHelpers.add_update_hint
 Registration::ConnectHelpers.ask_import_ssl_certificate
 Registration::ConnectHelpers.catch_registration_errors
 Registration::ConnectHelpers::IMPORT_ERROR_CODES

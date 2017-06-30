@@ -306,8 +306,11 @@ Installation::Widgets::SystemRoleReader#items
 Installation::Widgets::SystemRoleReader#label
 Installation::Widgets::SystemRoleReader#store
 Installation::Widgets::SystemRolesRadioButtons
+Installation::Widgets::SystemRolesRadioButtons#handle
+Installation::Widgets::SystemRolesRadioButtons#initialize
 Installation::Widgets::SystemRolesRadioButtons#store
 Installation::Widgets::SystemRolesRadioButtons#store_orig
+Installation::Widgets::SystemRolesRadioButtons#validate
 Installation::Widgets::SystemRolesRadioButtons#vspacing
 Yast
 Yast::CopyFilesFinishClient
@@ -325,7 +328,10 @@ Yast::DeployingProposalClient#CallProposalScript
 Yast::DeployingProposalClient#GenerateProposalText
 Yast::DeployingProposalClient#main
 Yast::DesktopFinishClient
-Yast::DesktopFinishClient#main
+Yast::DesktopFinishClient#initialize
+Yast::DesktopFinishClient#modes
+Yast::DesktopFinishClient#title
+Yast::DesktopFinishClient#write
 Yast::DisintegrateAllExtensionsClient
 Yast::DisintegrateAllExtensionsClient#main
 Yast::DriverUpdate1FinishClient
