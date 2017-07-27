@@ -30,13 +30,14 @@ module Yastdoc
       found = @index.find_all do |term, project|
         rx.match(term)
       end
-      found.map do |term, project|
+      results = found.map do |term, project|
         # Yast::Logger#log -> Yast/Logger:log
         path = term.gsub(/::/, "/").sub("#", ":")
         # Term:empty? -> Term%3Aempty%3F
         path = Rack::Utils.escape_path(path)
         Result.new(term, "http://www.rubydoc.info/#{project}/#{path}")
       end
+      results.sort_by(&:text)
     end
   end
 
