@@ -12,6 +12,9 @@ ServicesManagerClient::Id::SERVICES_TABLE
 ServicesManagerClient::Id::SHOW_DETAILS
 ServicesManagerClient::Id::TOGGLE_ENABLED
 ServicesManagerClient::Id::TOGGLE_RUNNING
+ServicesManagerERBTemplate
+ServicesManagerERBTemplate#initialize
+ServicesManagerERBTemplate#render
 UIElements
 UIElements#ahref
 UIElements#bold

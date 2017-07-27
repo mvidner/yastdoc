@@ -9,7 +9,6 @@ CFA::Hosts#hosts
 CFA::Hosts#include_ip?
 CFA::Hosts#initialize
 CFA::Hosts#set_entry
-CFA::Hosts::PARSER
 CFA::Hosts::PATH
 Yast
 Yast::ConfirmVirtProposal
@@ -125,15 +124,14 @@ Yast::InstallInfConvertor::InstallInf.[]
 Yast::InstallInfConvertor::InstallInf::INSTALL_INF
 Yast::Lan
 Yast::LanAutoClient
-Yast::LanAutoClient#FromAY
 Yast::LanAutoClient#ToAY
-Yast::LanAutoClient#UpcaseCondSet
 Yast::LanAutoClient#main
 Yast::LanClass
 Yast::LanClass#Add
 Yast::LanClass#AutoPackages
 Yast::LanClass#Delete
 Yast::LanClass#Export
+Yast::LanClass#FromAY
 Yast::LanClass#HaveXenBridge
 Yast::LanClass#IfcfgsToSkipVirtualizedProposal
 Yast::LanClass#Import
@@ -146,6 +144,7 @@ Yast::LanClass#ReadWithCacheNoGUI
 Yast::LanClass#SetIPv6
 Yast::LanClass#Summary
 Yast::LanClass#SummaryGeneral
+Yast::LanClass#UpcaseCondSet
 Yast::LanClass#UseNetworkManager
 Yast::LanClass#Write
 Yast::LanClass#WriteOnly
@@ -276,7 +275,8 @@ Yast::NetHwDetectionClass#Stop
 Yast::NetHwDetectionClass#main
 Yast::Network
 Yast::NetworkAutoYast
-Yast::NetworkAutoYast#configure_dns
+Yast::NetworkAutoYast#configure_hosts
+Yast::NetworkAutoYast#configure_lan
 Yast::NetworkAutoYast#create_udevs
 Yast::NetworkAutoYast#initialize
 Yast::NetworkAutoYast#keep_net_config?
@@ -586,6 +586,7 @@ Yast::NetworkWidgetsInclude
 Yast::NetworkWidgetsInclude#CreateSlaveItems
 Yast::NetworkWidgetsInclude#GetDeviceDescription
 Yast::NetworkWidgetsInclude#MakeStartmode
+Yast::NetworkWidgetsInclude#ManagedHandle
 Yast::NetworkWidgetsInclude#ManagedInit
 Yast::NetworkWidgetsInclude#ManagedStore
 Yast::NetworkWidgetsInclude#ValidateIP
@@ -695,6 +696,8 @@ Yast::SaveNetworkClient
 Yast::SaveNetworkClient#CopyConfiguredNetworkFiles
 Yast::SaveNetworkClient#adjust_for_network_disks
 Yast::SaveNetworkClient#configure_dns
+Yast::SaveNetworkClient#configure_hosts
+Yast::SaveNetworkClient#configure_lan
 Yast::SaveNetworkClient#configure_target
 Yast::SaveNetworkClient#copy_from_instsys
 Yast::SaveNetworkClient#copy_udev_rules

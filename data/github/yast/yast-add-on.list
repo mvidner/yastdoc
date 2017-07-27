@@ -47,6 +47,7 @@ Yast::AddOnProposalClient
 Yast::AddOnProposalClient#main
 Yast::InstAddOnClient
 Yast::InstAddOnClient#NetworkSetupForAddons
+Yast::InstAddOnClient#current_addons
 Yast::InstAddOnClient#main
 Yast::InstAddOnSoftwareClient
 Yast::InstAddOnSoftwareClient#main

@@ -74,6 +74,8 @@ CFA::BaseModel#loaded?
 CFA::BaseModel#merge_changes
 CFA::BaseModel#modify
 CFA::BaseModel#save
+CFA::BaseModel#tree_value_change
+CFA::BaseModel#tree_value_plain
 CFA::BaseModel#uncomment
 CFA::BaseModel.attributes
 CFA::BaseModel.default_file_handler

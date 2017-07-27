@@ -792,7 +792,9 @@ Yast::EventClass#IsWidgetSelectionChanged
 Yast::EventClass#IsWidgetValueChanged
 Yast::Execute
 Yast::Execute.locally
+Yast::Execute.locally!
 Yast::Execute.on_target
+Yast::Execute.on_target!
 Yast::FileChanges
 Yast::FileChangesClass
 Yast::FileChangesClass#CheckFiles
@@ -2618,6 +2620,7 @@ Yast::ValueBrowserClass#escapestring
 Yast::ValueBrowserClass#main
 Yast::ViewAnymsgClient
 Yast::ViewAnymsgClient#main
+Yast::ViewAnymsgClient::DEFAULT_FILENAMES
 Yast::Wizard
 Yast::WizardClass
 Yast::WizardClass#AbortAcceptButtonBox
