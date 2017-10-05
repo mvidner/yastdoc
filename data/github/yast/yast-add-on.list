@@ -51,15 +51,6 @@ Yast::InstAddOnClient#current_addons
 Yast::InstAddOnClient#main
 Yast::InstAddOnSoftwareClient
 Yast::InstAddOnSoftwareClient#main
-Yast::InstLanguageAddOnClient
-Yast::InstLanguageAddOnClient#Dialog_Init
-Yast::InstLanguageAddOnClient#Dialog_SelectLanguages
-Yast::InstLanguageAddOnClient#Dialog_SelectLanguagesUI
-Yast::InstLanguageAddOnClient#GetListOfSupportedLanguages
-Yast::InstLanguageAddOnClient#InitFunction
-Yast::InstLanguageAddOnClient#Install
-Yast::InstLanguageAddOnClient#MainFunction
-Yast::InstLanguageAddOnClient#main
 Yast::VendorClient
 Yast::VendorClient#main
 Yast::VendorClient#run_inst

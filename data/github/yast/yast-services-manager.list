@@ -88,7 +88,6 @@ Yast::ServicesManagerServiceClass#toggle
 Yast::ServicesManagerServiceClass#toggle!
 Yast::ServicesManagerServiceClass::COMMAND_OPTIONS
 Yast::ServicesManagerServiceClass::DEFAULT_SERVICE_SETTINGS
-Yast::ServicesManagerServiceClass::IS_ACTIVE_COMMAND
 Yast::ServicesManagerServiceClass::LIST_UNITS_COMMAND
 Yast::ServicesManagerServiceClass::LIST_UNIT_FILES_COMMAND
 Yast::ServicesManagerServiceClass::SERVICE_SUFFIX
@@ -100,6 +99,8 @@ Yast::ServicesManagerServiceClass::ServiceLoader#supported_unit_files
 Yast::ServicesManagerServiceClass::ServiceLoader#supported_units
 Yast::ServicesManagerServiceClass::ServiceLoader#unit_files
 Yast::ServicesManagerServiceClass::ServiceLoader#units
+Yast::ServicesManagerServiceClass::Settings
+Yast::ServicesManagerServiceClass::Settings#[]
 Yast::ServicesManagerServiceClass::Status
 Yast::ServicesManagerServiceClass::Status::LOADED
 Yast::ServicesManagerServiceClass::Status::MASKED

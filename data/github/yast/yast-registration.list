@@ -273,6 +273,7 @@ Registration::SwMgmt.get_release_type
 Registration::SwMgmt.init
 Registration::SwMgmt.installed_products
 Registration::SwMgmt.product_label
+Registration::SwMgmt.product_selected?
 Registration::SwMgmt.products_from_repo
 Registration::SwMgmt.raise_pkg_exception
 Registration::SwMgmt.remote_product
@@ -433,6 +434,9 @@ Registration::Widgets::RegistrationCode#register
 Registration::Widgets::RegistrationCode#store
 Registration::Widgets::RegistrationCode#validate
 Registration::Widgets::RegistrationCode::VALID_URL_SCHEMES
+RegistrationErbRendered
+RegistrationErbRendered#initialize
+RegistrationErbRendered#render_erb_template
 Yast
 Yast::DiscoverRegistrationServicesClient
 Yast::DiscoverRegistrationServicesClient#initialize

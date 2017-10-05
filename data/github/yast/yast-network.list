@@ -11,6 +11,7 @@ CFA::Hosts#initialize
 CFA::Hosts#set_entry
 CFA::Hosts::PATH
 Yast
+Yast#load_hosts
 Yast::ConfirmVirtProposal
 Yast::ConfirmVirtProposal#run
 Yast::DNS
@@ -365,7 +366,6 @@ Yast::NetworkLanAddressInclude#storeTunnel
 Yast::NetworkLanAddressInclude#store_ifplugd_priority
 Yast::NetworkLanAddressInclude#validate_bond
 Yast::NetworkLanAddressInclude#wireless_tab
-Yast::NetworkLanAddressInclude#wrap_text
 Yast::NetworkLanBridgeInclude
 Yast::NetworkLanBridgeInclude#ValidateBridge
 Yast::NetworkLanBridgeInclude#configure_as_bridge_port
@@ -578,7 +578,6 @@ Yast::NetworkServicesRoutingInclude#validateRouting
 Yast::NetworkStorage
 Yast::NetworkStorageClass
 Yast::NetworkStorageClass#getDevice
-Yast::NetworkStorageClass#main
 Yast::NetworkSummaryInclude
 Yast::NetworkSummaryInclude#BuildTypesList
 Yast::NetworkSummaryInclude#initialize_network_summary
@@ -708,6 +707,9 @@ Yast::SaveNetworkClient::ETC
 Yast::SaveNetworkClient::SYSCONFIG
 Yast::SetupDhcp
 Yast::SetupDhcp#main
+Yast::SetupDhcp#set_dhcp_hostname!
+Yast::SetupDhcp#set_dhcp_hostname?
+Yast::SetupDhcp#set_hostname_used?
 Yast::SuSEFirewall4Network
 Yast::SuSEFirewall4NetworkClass
 Yast::SuSEFirewall4NetworkClass#AnyInterfacesHandledByFirewall
