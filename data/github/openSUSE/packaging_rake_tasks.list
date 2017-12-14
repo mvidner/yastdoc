@@ -1,4 +1,5 @@
 #add_git_files
+#build_tarball
 #check_doc
 #check_doc_output
 #create_package_task

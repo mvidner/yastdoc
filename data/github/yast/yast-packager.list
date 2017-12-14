@@ -11,6 +11,7 @@ Y2Packager::Dialogs::AddonSelector#help_text
 Y2Packager::Dialogs::AddonSelector#initialize
 Y2Packager::Dialogs::AddonSelector#next_handler
 Y2Packager::Dialogs::AddonSelector#products
+Y2Packager::Dialogs::AddonSelector#run
 Y2Packager::Dialogs::AddonSelector#selected_products
 Y2Packager::Dialogs::InstProductLicense
 Y2Packager::Dialogs::InstProductLicense#back_handler
@@ -36,6 +37,7 @@ Y2Packager::Product#category
 Y2Packager::Product#display_name
 Y2Packager::Product#initialize
 Y2Packager::Product#installation_package
+Y2Packager::Product#installed?
 Y2Packager::Product#label
 Y2Packager::Product#license
 Y2Packager::Product#license?
@@ -49,7 +51,7 @@ Y2Packager::Product#restore
 Y2Packager::Product#select
 Y2Packager::Product#selected?
 Y2Packager::Product#short_name
-Y2Packager::Product#status
+Y2Packager::Product#status?
 Y2Packager::Product#vendor
 Y2Packager::Product#version
 Y2Packager::Product.all
@@ -79,6 +81,7 @@ Y2Packager::ReleaseNotesContentPrefs#fallback_lang
 Y2Packager::ReleaseNotesContentPrefs#fallback_lang=
 Y2Packager::ReleaseNotesContentPrefs#format
 Y2Packager::ReleaseNotesContentPrefs#format=
+Y2Packager::ReleaseNotesContentPrefs#to_s
 Y2Packager::ReleaseNotesContentPrefs#user_lang
 Y2Packager::ReleaseNotesContentPrefs#user_lang=
 Y2Packager::ReleaseNotesFetchers
@@ -247,15 +250,11 @@ Yast::DefaultDesktopClass#Desktop
 Yast::DefaultDesktopClass#ForceReinit
 Yast::DefaultDesktopClass#GetAllDesktopsMap
 Yast::DefaultDesktopClass#Init
-Yast::DefaultDesktopClass#MissingKey
-Yast::DefaultDesktopClass#PatternsToDeselect
-Yast::DefaultDesktopClass#PatternsToSelect
-Yast::DefaultDesktopClass#PrefferedWindowManager
-Yast::DefaultDesktopClass#SelectedDesktops
-Yast::DefaultDesktopClass#SelectedPackages
-Yast::DefaultDesktopClass#SelectedPatterns
 Yast::DefaultDesktopClass#SetDesktop
+Yast::DefaultDesktopClass#desktop_entry
 Yast::DefaultDesktopClass#main
+Yast::DefaultDesktopClass::DEFAULT_VALUES
+Yast::DefaultDesktopClass::PROPOSAL_ID
 Yast::DoNotShowAgainEditorClient
 Yast::DoNotShowAgainEditorClient#DeleteItem
 Yast::DoNotShowAgainEditorClient#HandleDialog
@@ -501,12 +500,16 @@ Yast::PackagesClass#UpdateSourceURL
 Yast::PackagesClass#addAdditionalPackage
 Yast::PackagesClass#architecturePackages
 Yast::PackagesClass#boardPackages
+Yast::PackagesClass#braille_packages
+Yast::PackagesClass#check_remote_installation_packages
 Yast::PackagesClass#default_patterns
 Yast::PackagesClass#extra_system_patterns
 Yast::PackagesClass#group_products_by_status
 Yast::PackagesClass#kernelCmdLinePackages
 Yast::PackagesClass#log_software_selection
 Yast::PackagesClass#main
+Yast::PackagesClass#missing_remote_kind
+Yast::PackagesClass#missing_remote_packages
 Yast::PackagesClass#modePackages
 Yast::PackagesClass#optional_default_patterns
 Yast::PackagesClass#product_label
@@ -517,6 +520,7 @@ Yast::PackagesClass#remote_x11_packages
 Yast::PackagesClass#resolvable_mandatory_patterns
 Yast::PackagesClass#resolvable_optional_patterns
 Yast::PackagesClass#sourceAccessPackages
+Yast::PackagesClass#ssh_packages
 Yast::PackagesClass#vnc_packages
 Yast::PackagesClass::AUTOYAST_X11_TAGS
 Yast::PackagesClass::BASE_PRODUCT_FILE

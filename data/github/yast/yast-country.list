@@ -1,4 +1,5 @@
 Y2Country
+Y2Country.read_locale_conf
 Y2Country::Widgets
 Y2Country::Widgets::KeyboardSelection
 Y2Country::Widgets::KeyboardSelectionBase
@@ -110,6 +111,7 @@ Yast::LanguageClass#EnglishName
 Yast::LanguageClass#EnoughSpace
 Yast::LanguageClass#Export
 Yast::LanguageClass#FillEnglishNames
+Yast::LanguageClass#GetCurrentLocaleString
 Yast::LanguageClass#GetExpertValues
 Yast::LanguageClass#GetGivenLanguageCountry
 Yast::LanguageClass#GetLang2KeyboardMap
@@ -135,8 +137,9 @@ Yast::LanguageClass#PackagesModified
 Yast::LanguageClass#QuickSet
 Yast::LanguageClass#Read
 Yast::LanguageClass#ReadLanguageMap
-Yast::LanguageClass#ReadSysconfigLanguage
+Yast::LanguageClass#ReadLocaleConfLanguage
 Yast::LanguageClass#ReadSysconfigValues
+Yast::LanguageClass#ReadUtf8Setting
 Yast::LanguageClass#RemoveSuffix
 Yast::LanguageClass#ResetRecommendedPackages
 Yast::LanguageClass#Save

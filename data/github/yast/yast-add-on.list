@@ -34,6 +34,7 @@ Yast::AddOnAddOnWorkflowInclude#RunWizard
 Yast::AddOnAddOnWorkflowInclude#SetAddOnProductName
 Yast::AddOnAddOnWorkflowInclude#SetWizardWindowInProgress
 Yast::AddOnAddOnWorkflowInclude#Write
+Yast::AddOnAddOnWorkflowInclude#activate_addon_changes
 Yast::AddOnAddOnWorkflowInclude#initialize_add_on_add_on_workflow
 Yast::AddOnAutoClient
 Yast::AddOnAutoClient#main

@@ -375,6 +375,7 @@ Yast::BootStorageClass#root_partition
 Yast::BootStorageClass#separated_boot?
 Yast::BootStorageClass#staging
 Yast::BootStorageClass#storage_changed?
+Yast::BootStorageClass#storage_read?
 Yast::BootSupportCheck
 Yast::BootSupportCheckClass
 Yast::BootSupportCheckClass#StringProblems

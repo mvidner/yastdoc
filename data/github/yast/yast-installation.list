@@ -72,6 +72,7 @@ Installation::InstsysCleaner.make_clean
 Installation::InstsysCleaner::KERNEL_MODULES_MOUNT_POINT
 Installation::InstsysCleaner::KERNEL_MODULES_WATERLINE
 Installation::InstsysCleaner::LIBZYPP_CACHE_PATH
+Installation::InstsysCleaner::LIBZYPP_CLEANUP_PATTERNS
 Installation::InstsysCleaner::LIBZYPP_WATERLINE
 Installation::MinimalInstallation
 Installation::MinimalInstallation#enabled
@@ -122,6 +123,7 @@ Installation::RemoteFinishClient
 Installation::RemoteFinishClient#enable_remote
 Installation::RemoteFinishClient#initialize
 Installation::RemoteFinishClient#modes
+Installation::RemoteFinishClient#remote
 Installation::RemoteFinishClient#run
 Installation::RemoteFinishClient#title
 Installation::SSHImportAutoClient
@@ -350,8 +352,6 @@ Yast::CopyFilesFinishClient#CopyHardwareUdevRules
 Yast::CopyFilesFinishClient#copy_ssh_files
 Yast::CopyFilesFinishClient#main
 Yast::CopyFilesFinishClient::UDEV_RULES_DIR
-Yast::CopySystemfilesFinishClient
-Yast::CopySystemfilesFinishClient#main
 Yast::DeployImageAutoClient
 Yast::DeployImageAutoClient#main
 Yast::DeployingProposalClient
@@ -422,7 +422,6 @@ Yast::InstAskOnlineUpdateClient#main
 Yast::InstCheckAutoinstModeClient
 Yast::InstCheckAutoinstModeClient#main
 Yast::InstComplexWelcomeClient
-Yast::InstComplexWelcomeClient#handle_dialog_result
 Yast::InstComplexWelcomeClient#main
 Yast::InstComplexWelcomeClient::BETA_FILE
 Yast::InstCongratulateClient
@@ -491,8 +490,6 @@ Yast::InstModeClient#main
 Yast::InstNetworkCheckClient
 Yast::InstNetworkCheckClient#main
 Yast::InstPreInstallClient
-Yast::InstPreInstallClient#FindAndCopyNewestFiles
-Yast::InstPreInstallClient#FindTheBestFiles
 Yast::InstPreInstallClient#Initialize
 Yast::InstPreInstallClient#can_read_users?
 Yast::InstPreInstallClient#each_mounted_device
@@ -531,6 +528,7 @@ Yast::InstSystemAnalysisClient#ActionLoadModules
 Yast::InstSystemAnalysisClient#ActionUSB
 Yast::InstSystemAnalysisClient#FilesFromOlderSystems
 Yast::InstSystemAnalysisClient#InitInstallationRepositories
+Yast::InstSystemAnalysisClient#activate_callbacks
 Yast::InstSystemAnalysisClient#main
 Yast::InstUpdateInstaller
 Yast::InstUpdateInstaller#add_repository
@@ -591,6 +589,7 @@ Yast::InstWorkerContinueClient#main
 Yast::InstWorkerInitialClient
 Yast::InstWorkerInitialClient#main
 Yast::InstallationClient
+Yast::InstallationClient#log_os_release
 Yast::InstallationClient#main
 Yast::InstallationInstIncAllInclude
 Yast::InstallationInstIncAllInclude#FinishInstallation
@@ -678,15 +677,9 @@ Yast::SystemFilesCopy
 Yast::SystemFilesCopyClass
 Yast::SystemFilesCopyClass#AdjustDirectoryPath
 Yast::SystemFilesCopyClass#CopyFilesFromDirToDir
-Yast::SystemFilesCopyClass#CopyFilesToSystem
-Yast::SystemFilesCopyClass#CopyFilesToTemp
 Yast::SystemFilesCopyClass#CreateDirectoryIfMissing
-Yast::SystemFilesCopyClass#GetCopySystemFiles
-Yast::SystemFilesCopyClass#GetUseControlFileDef
 Yast::SystemFilesCopyClass#Initialize
 Yast::SystemFilesCopyClass#SaveInstSysContent
-Yast::SystemFilesCopyClass#SetCopySystemFiles
-Yast::SystemFilesCopyClass#SetUseControlFileDef
 Yast::SystemFilesCopyClass#main
 Yast::TestInstClientClient
 Yast::TestInstClientClient#main
@@ -707,6 +700,8 @@ Yast::UmountFinishClient#root_subvol_read_only_configured?
 Yast::UmountFinishClient#set_fstab_root_subvol_read_only
 Yast::UmountFinishClient#set_root_subvol_property_read_only
 Yast::UmountFinishClient#set_root_subvol_read_only
+Yast::UmountFinishClient::EFIVARS_PATH
+Yast::UmountFinishClient::USB_PATH
 Yast::UpdateWizardStepsClient
 Yast::UpdateWizardStepsClient#main
 Yast::Vendor
