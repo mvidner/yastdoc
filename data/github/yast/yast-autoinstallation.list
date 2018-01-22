@@ -7,6 +7,10 @@ Y2Autoinstallation
 Y2Autoinstallation::ActivateCallbacks
 Y2Autoinstallation::ActivateCallbacks#luks
 Y2Autoinstallation::ActivateCallbacks#multipath
+Y2Autoinstallation::AutosetupHelpers
+Y2Autoinstallation::AutosetupHelpers#modified_profile?
+Y2Autoinstallation::AutosetupHelpers#probe_storage
+Y2Autoinstallation::AutosetupHelpers#readModified
 Y2Autoinstallation::Dialogs
 Y2Autoinstallation::Dialogs::DiskSelector
 Y2Autoinstallation::Dialogs::DiskSelector#abort_button
@@ -151,7 +155,8 @@ Yast::AutoinstConfigClass#ShellEscape
 Yast::AutoinstConfigClass#find_slp_autoyast
 Yast::AutoinstConfigClass#getProposalList
 Yast::AutoinstConfigClass#main
-Yast::AutoinstConfigClass#selected_product
+Yast::AutoinstConfigClass#profile_backup_path
+Yast::AutoinstConfigClass#profile_path
 Yast::AutoinstConfigClass#setProposalList
 Yast::AutoinstConfigClass#update_profile_location
 Yast::AutoinstConfigClass::DEFAULT_PROFILE_NAME
@@ -186,8 +191,10 @@ Yast::AutoinstFileClass#Write
 Yast::AutoinstFileClass#main
 Yast::AutoinstFunctions
 Yast::AutoinstFunctionsClass
+Yast::AutoinstFunctionsClass#check_second_stage_environment
 Yast::AutoinstFunctionsClass#main
 Yast::AutoinstFunctionsClass#second_stage_required?
+Yast::AutoinstFunctionsClass#selected_product
 Yast::AutoinstGeneral
 Yast::AutoinstGeneralClass
 Yast::AutoinstGeneralClass#AutoinstGeneral
@@ -318,8 +325,10 @@ Yast::AutoinstSoftwareClass#createImage
 Yast::AutoinstSoftwareClass#install_packages
 Yast::AutoinstSoftwareClass#locked_packages
 Yast::AutoinstSoftwareClass#main
+Yast::AutoinstSoftwareClass#merge_product
 Yast::AutoinstSoftwareClass#pmInit
 Yast::AutoinstSoftwareClass#read_initial_stage
+Yast::AutoinstSoftwareClass::BAD_LIST_FILE
 Yast::AutoinstStorage
 Yast::AutoinstStorageClass
 Yast::AutoinstStorageClass#Import
@@ -541,12 +550,10 @@ Yast::InstAutosetupClient
 Yast::InstAutosetupClient#add_yast2_dependencies
 Yast::InstAutosetupClient#autosetup_users
 Yast::InstAutosetupClient#main
-Yast::InstAutosetupClient#readModified
 Yast::InstAutosetupClient::Target
 Yast::InstAutosetupUpgradeClient
 Yast::InstAutosetupUpgradeClient#GetUpdateConf
 Yast::InstAutosetupUpgradeClient#main
-Yast::InstAutosetupUpgradeClient#readModified
 Yast::InstStoreUpgradeSoftwareClient
 Yast::InstStoreUpgradeSoftwareClient#main
 Yast::ModuleConfigBuilder
@@ -588,6 +595,7 @@ Yast::ProfileClass#check_version
 Yast::ProfileClass#generalCompat
 Yast::ProfileClass#main
 Yast::ProfileClass#merge_resource_aliases!
+Yast::ProfileClass#needed_second_stage_packages
 Yast::ProfileClass#remove_sections
 Yast::ProfileClass#resource_aliases_map
 Yast::ProfileClass#setElementByList

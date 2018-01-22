@@ -45,7 +45,6 @@ Yast::KeyboardAutoClient
 Yast::KeyboardAutoClient#main
 Yast::KeyboardClass
 Yast::KeyboardClass#CalledRestore
-Yast::KeyboardClass#CheckKeyboardDuringUpdate
 Yast::KeyboardClass#Export
 Yast::KeyboardClass#GetExpertValues
 Yast::KeyboardClass#GetKbdSysconfig

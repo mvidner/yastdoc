@@ -123,6 +123,7 @@ Registration::Registration.credentials_path
 Registration::Registration.is_registered?
 Registration::RegistrationCodesLoader
 Registration::RegistrationCodesLoader#parse_xml
+Registration::RegistrationCodesLoader#reg_codes_from_install_inf
 Registration::RegistrationCodesLoader#reg_codes_from_txt
 Registration::RegistrationCodesLoader#reg_codes_from_usb_stick
 Registration::RegistrationCodesLoader#reg_codes_from_xml

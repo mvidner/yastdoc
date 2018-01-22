@@ -2,6 +2,8 @@ Y2Packager
 Y2Packager::Clients
 Y2Packager::Clients::InstProductLicense
 Y2Packager::Clients::InstProductLicense#main
+Y2Packager::Clients::InstProductUpgradeLicense
+Y2Packager::Clients::InstProductUpgradeLicense#main
 Y2Packager::Clients::InstRepositoriesInitialization
 Y2Packager::Clients::InstRepositoriesInitialization#main
 Y2Packager::Dialogs
