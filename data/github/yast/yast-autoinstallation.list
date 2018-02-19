@@ -152,6 +152,7 @@ Yast::AutoinstConfigClass#ParseCmdLine
 Yast::AutoinstConfigClass#Save
 Yast::AutoinstConfigClass#SetProtocolMessage
 Yast::AutoinstConfigClass#ShellEscape
+Yast::AutoinstConfigClass#dont_edit
 Yast::AutoinstConfigClass#find_slp_autoyast
 Yast::AutoinstConfigClass#getProposalList
 Yast::AutoinstConfigClass#main
@@ -314,6 +315,7 @@ Yast::AutoinstSoftwareClass#ReadHelper
 Yast::AutoinstSoftwareClass#RemoveModulePackages
 Yast::AutoinstSoftwareClass#SavePackageSelection
 Yast::AutoinstSoftwareClass#SavedPackageSelection
+Yast::AutoinstSoftwareClass#SelectPackagesForInstallation
 Yast::AutoinstSoftwareClass#SetModified
 Yast::AutoinstSoftwareClass#Summary
 Yast::AutoinstSoftwareClass#Write
@@ -329,6 +331,7 @@ Yast::AutoinstSoftwareClass#merge_product
 Yast::AutoinstSoftwareClass#pmInit
 Yast::AutoinstSoftwareClass#read_initial_stage
 Yast::AutoinstSoftwareClass::BAD_LIST_FILE
+Yast::AutoinstSoftwareClass::MAX_PACKAGE_VIEW
 Yast::AutoinstStorage
 Yast::AutoinstStorageClass
 Yast::AutoinstStorageClass#Import

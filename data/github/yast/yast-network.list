@@ -271,6 +271,7 @@ Yast::LanItemsClass#GetNetcardInterfaces
 Yast::LanItemsClass#GetNetcardNames
 Yast::LanItemsClass#GetSlaveCandidates
 Yast::LanItemsClass#Import
+Yast::LanItemsClass#InitItemUdevRule
 Yast::LanItemsClass#InitS390VarsByDefaults
 Yast::LanItemsClass#IsBondable
 Yast::LanItemsClass#IsBridgeable
@@ -293,6 +294,7 @@ Yast::LanItemsClass#SetDeviceVars
 Yast::LanItemsClass#SetItem
 Yast::LanItemsClass#SetItemName
 Yast::LanItemsClass#SetItemSysconfigOpt
+Yast::LanItemsClass#SetItemUdevRule
 Yast::LanItemsClass#SetModified
 Yast::LanItemsClass#SetS390Vars
 Yast::LanItemsClass#WriteUdevDriverRules
@@ -415,7 +417,6 @@ Yast::NetworkLanAddressInclude#InitBridge
 Yast::NetworkLanAddressInclude#InitFwZone
 Yast::NetworkLanAddressInclude#InitSlave
 Yast::NetworkLanAddressInclude#InitVLANSlave
-Yast::NetworkLanAddressInclude#NeedToAssignFwZone
 Yast::NetworkLanAddressInclude#StoreAddrWidget
 Yast::NetworkLanAddressInclude#StoreBridge
 Yast::NetworkLanAddressInclude#StoreSlave
@@ -778,7 +779,6 @@ Yast::SuSEFirewall4NetworkClass#SetEnabled1stStage
 Yast::SuSEFirewall4NetworkClass#SetSshEnabled1stStage
 Yast::SuSEFirewall4NetworkClass#SetSshdEnabled
 Yast::SuSEFirewall4NetworkClass#SetVncEnabled1stStage
-Yast::SuSEFirewall4NetworkClass#UnconfiguredIsBlocked
 Yast::SuSEFirewall4NetworkClass#Write
 Yast::SuSEFirewall4NetworkClass#iface_in_zone?
 Yast::SuSEFirewall4NetworkClass#main

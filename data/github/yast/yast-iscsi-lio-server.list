@@ -452,6 +452,7 @@ UserName#store
 UserName#validate
 Yast
 Yast::ISCSILioServer
+Yast::ISCSILioServer#firewalld
 Yast::ISCSILioServer#installed_packages
 Yast::ISCSILioServer#is_root
 Yast::ISCSILioServer#run

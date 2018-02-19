@@ -10,11 +10,8 @@ Yast::AddOnAddOnWorkflowInclude#GetAllProductsInfo
 Yast::AddOnAddOnWorkflowInclude#GetInstalledProducts
 Yast::AddOnAddOnWorkflowInclude#GetProductInfos
 Yast::AddOnAddOnWorkflowInclude#GetRepoInfo
-Yast::AddOnAddOnWorkflowInclude#GetURLBeginsWith
 Yast::AddOnAddOnWorkflowInclude#InstallProduct
-Yast::AddOnAddOnWorkflowInclude#IsAnyNetworkAvailable
 Yast::AddOnAddOnWorkflowInclude#LoadLibzyppNow
-Yast::AddOnAddOnWorkflowInclude#LogWrongProduct
 Yast::AddOnAddOnWorkflowInclude#MediaSelect
 Yast::AddOnAddOnWorkflowInclude#NeutralizeAllResolvables
 Yast::AddOnAddOnWorkflowInclude#ProductSelect

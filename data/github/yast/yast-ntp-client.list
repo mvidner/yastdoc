@@ -107,7 +107,8 @@ Y2NtpClient::Widgets::SyncInterval
 Y2NtpClient::Widgets::SyncInterval#init
 Y2NtpClient::Widgets::SyncInterval#initialize
 Y2NtpClient::Widgets::SyncInterval#label
-Y2NtpClient::Widgets::SyncInterval#minimal
+Y2NtpClient::Widgets::SyncInterval#maximum
+Y2NtpClient::Widgets::SyncInterval#minimum
 Y2NtpClient::Widgets::SyncInterval#store
 Y2NtpClient::Widgets::TestButton
 Y2NtpClient::Widgets::TestButton#handle

@@ -45,6 +45,7 @@ Registration::ConnectHelpers
 Registration::ConnectHelpers.add_update_hint
 Registration::ConnectHelpers.ask_import_ssl_certificate
 Registration::ConnectHelpers.catch_registration_errors
+Registration::ConnectHelpers.handle_ssl_error
 Registration::ConnectHelpers::IMPORT_ERROR_CODES
 Registration::DownloadError
 Registration::Downloader
@@ -112,6 +113,7 @@ Registration::Registration#get_addon_list
 Registration::Registration#get_updates_list
 Registration::Registration#initialize
 Registration::Registration#migration_products
+Registration::Registration#offline_migration_products
 Registration::Registration#register
 Registration::Registration#register_product
 Registration::Registration#synchronize_products
@@ -136,6 +138,7 @@ Registration::RegistrationUI#get_available_addons
 Registration::RegistrationUI#initialize
 Registration::RegistrationUI#install_updates?
 Registration::RegistrationUI#migration_products
+Registration::RegistrationUI#offline_migration_products
 Registration::RegistrationUI#register_addons
 Registration::RegistrationUI#register_system_and_base_product
 Registration::RegistrationUI#registered_addons_to_rollback

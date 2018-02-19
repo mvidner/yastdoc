@@ -38,8 +38,10 @@ Yast::InstserverClass#basearch_mapping
 Yast::InstserverClass#configSetup
 Yast::InstserverClass#createLinks
 Yast::InstserverClass#createOrderFiles
+Yast::InstserverClass#firewalld
 Yast::InstserverClass#get_machines
 Yast::InstserverClass#main
+Yast::InstserverClass#socket
 Yast::InstserverClass#subreplace
 Yast::InstserverClass#vsftpd_is_standalone
 Yast::InstserverClient
