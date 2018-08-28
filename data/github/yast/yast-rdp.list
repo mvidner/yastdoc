@@ -12,7 +12,8 @@ Yast::RDPClass#firewalld
 Yast::RDPClass#main
 Yast::RDPClass#open_fw_port
 Yast::RDPClass#open_fw_port=
-Yast::RDPClass#write_firewall_setting
+Yast::RDPClass#write_firewall_settings
+Yast::RDPClass::FW_SERVICE
 Yast::RDPClass::FW_ZONES
 Yast::RdpClient
 Yast::RdpClient#ListHandler

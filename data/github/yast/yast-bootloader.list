@@ -58,6 +58,7 @@ Bootloader::BootloaderFactory.current_name=
 Bootloader::BootloaderFactory.proposed
 Bootloader::BootloaderFactory.supported_names
 Bootloader::BootloaderFactory.system
+Bootloader::BootloaderFactory::DEFAULT_KEYWORD
 Bootloader::BootloaderFactory::SUPPORTED_BOOTLOADERS
 Bootloader::BootloaderTab
 Bootloader::BootloaderTab#contents
@@ -252,6 +253,10 @@ Bootloader::ProposalClient#ask_user
 Bootloader::ProposalClient#description
 Bootloader::ProposalClient#initialize
 Bootloader::ProposalClient#make_proposal
+Bootloader::ProposalClient::MismatchBootloader
+Bootloader::ProposalClient::MismatchBootloader#boot_map
+Bootloader::ProposalClient::MismatchBootloader#initialize
+Bootloader::ProposalClient::MismatchBootloader#user_message
 Bootloader::ProposalClient::PROPOSAL_LINKS
 Bootloader::ReadDialog
 Bootloader::ReadDialog#run
@@ -344,6 +349,9 @@ Bootloader::UdevMapping#to_mountby_device
 Bootloader::UnsupportedBootloader
 Bootloader::UnsupportedBootloader#bootloader_name
 Bootloader::UnsupportedBootloader#initialize
+Bootloader::UnsupportedOption
+Bootloader::UnsupportedOption#initialize
+Bootloader::UnsupportedOption#option
 Bootloader::WriteDialog
 Bootloader::WriteDialog#run
 Yast
@@ -352,6 +360,7 @@ Yast::BootArchClass
 Yast::BootArchClass#DefaultKernelParams
 Yast::BootArchClass#ResumeAvailable
 Yast::BootArchClass#main
+Yast::BootArchClass::S390_WHITELIST
 Yast::BootStorage
 Yast::BootStorageClass
 Yast::BootStorageClass#available_swap_partitions
@@ -362,6 +371,7 @@ Yast::BootStorageClass#bootloader_installable?
 Yast::BootStorageClass#encrypted_boot?
 Yast::BootStorageClass#extended_for_logical
 Yast::BootStorageClass#gpt_boot_disk?
+Yast::BootStorageClass#gpt_disks
 Yast::BootStorageClass#main
 Yast::BootStorageClass#prep_partitions
 Yast::BootStorageClass#reset_disks

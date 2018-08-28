@@ -458,8 +458,9 @@ Yast::ISCSILioServer#is_root
 Yast::ISCSILioServer#run
 Yast::ServiceTab
 Yast::ServiceTab#contents
-Yast::ServiceTab#handle
 Yast::ServiceTab#help
 Yast::ServiceTab#initialize
 Yast::ServiceTab#label
 Yast::ServiceTab#opt
+Yast::ServiceTab#store
+Yast::ServiceTab#write

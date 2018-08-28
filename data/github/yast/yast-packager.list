@@ -9,6 +9,7 @@ Y2Packager::Clients::InstRepositoriesInitialization#main
 Y2Packager::Dialogs
 Y2Packager::Dialogs::AddonSelector
 Y2Packager::Dialogs::AddonSelector#abort_handler
+Y2Packager::Dialogs::AddonSelector#create_dialog
 Y2Packager::Dialogs::AddonSelector#help_text
 Y2Packager::Dialogs::AddonSelector#initialize
 Y2Packager::Dialogs::AddonSelector#next_handler
@@ -17,6 +18,7 @@ Y2Packager::Dialogs::AddonSelector#run
 Y2Packager::Dialogs::AddonSelector#selected_products
 Y2Packager::Dialogs::InstProductLicense
 Y2Packager::Dialogs::InstProductLicense#contents
+Y2Packager::Dialogs::InstProductLicense#disable_buttons
 Y2Packager::Dialogs::InstProductLicense#initialize
 Y2Packager::Dialogs::InstProductLicense#product
 Y2Packager::Dialogs::InstProductLicense#title
@@ -159,6 +161,7 @@ Yast::AddOnProductClass#UserSelectsRequiredAddOns
 Yast::AddOnProductClass#add_rename
 Yast::AddOnProductClass#main
 Yast::AddOnProductClass#renamed?
+Yast::AddOnProductClass#selected_installation_products
 Yast::AddOnProductClass::CD_SCHEMES
 Yast::AddOnProductClass::DEFAULT_PRODUCT_RENAMES
 Yast::AddOnProductClass::NETWORK_SCHEMES
@@ -218,7 +221,6 @@ Yast::InstKickoffClient#backup_stuff
 Yast::InstKickoffClient#createmdadm
 Yast::InstKickoffClient#load_network_modules
 Yast::InstKickoffClient#main
-Yast::InstKickoffClient#remove_stuff
 Yast::InstProductsourcesClient
 Yast::InstProductsourcesClient#CreateAndAdjustWriteProgress
 Yast::InstProductsourcesClient#CreateRepoId
@@ -461,6 +463,7 @@ Yast::PackagesClass#product_update_summary
 Yast::PackagesClass#product_update_warning
 Yast::PackagesClass#proposal_for_update
 Yast::PackagesClass#remote_x11_packages
+Yast::PackagesClass#repo_schemes
 Yast::PackagesClass#resolvable_mandatory_patterns
 Yast::PackagesClass#resolvable_optional_patterns
 Yast::PackagesClass#sourceAccessPackages
@@ -469,6 +472,9 @@ Yast::PackagesClass#vnc_packages
 Yast::PackagesClass::AUTOYAST_X11_TAGS
 Yast::PackagesClass::BASE_PRODUCT_FILE
 Yast::PackagesClass::DEFAULT_WM
+Yast::PackagesClass::FIPS_BOOT_OPTION
+Yast::PackagesClass::FIPS_FILE
+Yast::PackagesClass::FIPS_PATTERN
 Yast::PackagesClass::GRAPHIC_PACKAGES
 Yast::PackagesClass::LOG_RESOLVABLE_STATUS
 Yast::PackagesClass::LOG_RESOLVABLE_TRANSACT_BY
@@ -497,6 +503,8 @@ Yast::ProductLicenseClass#AskLicenseAgreement
 Yast::ProductLicenseClass#AskLicensesAgreement
 Yast::ProductLicenseClass#AskLicensesAgreementWithHeading
 Yast::ProductLicenseClass#CleanUp
+Yast::ProductLicenseClass#DisplayLicenseDialogWithTitle
+Yast::ProductLicenseClass#HandleLicenseDialogRet
 Yast::ProductLicenseClass#SetAcceptanceNeeded
 Yast::ProductLicenseClass#ShowFullScreenLicenseInInstallation
 Yast::ProductLicenseClass#ShowLicenseInInstallation
@@ -506,6 +514,7 @@ Yast::ProductLicenseClass#license_file_print=
 Yast::ProductLicenseClass#license_patterns
 Yast::ProductLicenseClass#license_patterns=
 Yast::ProductLicenseClass#main
+Yast::ProductLicenseClass::DEFAULT_FALLBACK_LANGUAGES
 Yast::ProductLicenseClass::DOWNLOAD_URL_SCHEMA
 Yast::ProductLicenseClass::README_BETA
 Yast::ProductPatterns
@@ -539,6 +548,8 @@ Yast::RepositoriesClient#fillCurrentRepoInfo
 Yast::RepositoriesClient#fillRepoInfo
 Yast::RepositoriesClient#fillTable
 Yast::RepositoriesClient#getSourceInfo
+Yast::RepositoriesClient#import_modules
+Yast::RepositoriesClient#initialize
 Yast::RepositoriesClient#main
 Yast::RepositoriesClient#newServices
 Yast::RepositoriesClient#newSources
@@ -559,6 +570,7 @@ Yast::RepositoriesClient#service_enable_handler
 Yast::RepositoriesClient#service_replace_handler
 Yast::RepositoriesClient#textmode
 Yast::RepositoriesClient#url_occupied?
+Yast::RepositoriesClient#warn_service_repository
 Yast::RepositoriesClient::NO_SERVICE
 Yast::RepositoriesClient::NO_SERVICE_ITEM
 Yast::SelectSlpSourceClient

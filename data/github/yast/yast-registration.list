@@ -3,7 +3,6 @@ Registration::ADDON_SORTER
 Registration::Addon
 Registration::Addon#auto_selected?
 Registration::Addon#available?
-Registration::Addon#beta_release?
 Registration::Addon#depends_on
 Registration::Addon#depends_on=
 Registration::Addon#initialize
@@ -13,6 +12,7 @@ Registration::Addon#regcode
 Registration::Addon#regcode=
 Registration::Addon#registered
 Registration::Addon#registered?
+Registration::Addon#released?
 Registration::Addon#selectable?
 Registration::Addon#selected
 Registration::Addon#selected?
@@ -31,6 +31,7 @@ Registration::Addon.registration_order
 Registration::Addon.reset!
 Registration::Addon.reset_auto_selected
 Registration::Addon.selected
+Registration::Addon::DEVELOPMENT_STAGES
 Registration::AutoyastAddons
 Registration::AutoyastAddons#initialize
 Registration::AutoyastAddons#register
@@ -46,6 +47,7 @@ Registration::ConnectHelpers.add_update_hint
 Registration::ConnectHelpers.ask_import_ssl_certificate
 Registration::ConnectHelpers.catch_registration_errors
 Registration::ConnectHelpers.handle_ssl_error
+Registration::ConnectHelpers.report_pkg_error
 Registration::ConnectHelpers::IMPORT_ERROR_CODES
 Registration::DownloadError
 Registration::Downloader
@@ -75,7 +77,9 @@ Registration::Fingerprint::SHA1
 Registration::Fingerprint::SHA256
 Registration::FinishDialog
 Registration::FinishDialog#initialize
+Registration::FinishDialog#remove_ncc_credentials
 Registration::FinishDialog#run
+Registration::FinishDialog#save_config
 Registration::FinishDialog::USABLE_WORKFLOWS
 Registration::Helpers
 Registration::Helpers.base_version
@@ -105,6 +109,7 @@ Registration::MigrationRepositories#service_with_update_repo?
 Registration::MigrationRepositories#services
 Registration::MigrationRepositories#services=
 Registration::MigrationRepositories.reset
+Registration::PkgAborted
 Registration::PkgError
 Registration::Registration
 Registration::Registration#activated_products
@@ -132,6 +137,7 @@ Registration::RegistrationCodesLoader#reg_codes_from_xml
 Registration::RegistrationCodesLoader#with_tempfile
 Registration::RegistrationCodesLoader::REGCODES_NAME_HANDLERS
 Registration::RegistrationUI
+Registration::RegistrationUI#activated_products
 Registration::RegistrationUI#disable_update_repos
 Registration::RegistrationUI#downgrade_product
 Registration::RegistrationUI#get_available_addons
@@ -168,6 +174,16 @@ Registration::RepoStateStorage#repositories=
 Registration::RepoStateStorage#restore_all
 Registration::RepoStateStorage#write
 Registration::RepoStateStorage::REPO_STATE_FILE
+Registration::RollbackScript
+Registration::RollbackScript#applicable?
+Registration::RollbackScript#create
+Registration::RollbackScript#delete
+Registration::RollbackScript#initialize
+Registration::RollbackScript#root
+Registration::RollbackScript#script_path
+Registration::RollbackScript::BACKUP_DIR
+Registration::RollbackScript::DEFAULT_SCRIPT_NAME
+Registration::RollbackScript::SUSE_CONNECT
 Registration::ServiceError
 Registration::ServiceError#initialize
 Registration::ServiceError#service
@@ -201,7 +217,9 @@ Registration::SslCertificate.load
 Registration::SslCertificate.load_file
 Registration::SslCertificate.update_instsys_ca
 Registration::SslCertificate::CA_CERTS_DIR
+Registration::SslCertificate::INSTSYS_CERT_DIR
 Registration::SslCertificate::INSTSYS_SERVER_CERT_FILE
+Registration::SslCertificate::PATHS
 Registration::SslCertificate::TMP_CA_CERTS_DIR
 Registration::SslCertificateDetails
 Registration::SslCertificateDetails#initialize
@@ -221,6 +239,8 @@ Registration::Storage::Cache#reg_url
 Registration::Storage::Cache#reg_url=
 Registration::Storage::Cache#reg_url_cached
 Registration::Storage::Cache#reg_url_cached=
+Registration::Storage::Cache#rollback
+Registration::Storage::Cache#rollback=
 Registration::Storage::Cache#upgrade_failed
 Registration::Storage::Cache#upgrade_failed=
 Registration::Storage::Config
@@ -295,6 +315,7 @@ Registration::SwMgmt.find_base_product
 Registration::SwMgmt.get_release_type
 Registration::SwMgmt.init
 Registration::SwMgmt.installed_products
+Registration::SwMgmt.installer_update_base_product
 Registration::SwMgmt.product_installed?
 Registration::SwMgmt.product_label
 Registration::SwMgmt.product_selected?
@@ -304,10 +325,12 @@ Registration::SwMgmt.remote_product
 Registration::SwMgmt.remove_service
 Registration::SwMgmt.repository_data
 Registration::SwMgmt.select_addon_products
+Registration::SwMgmt.select_default_product_patterns
 Registration::SwMgmt.select_product_addons
 Registration::SwMgmt.service_repos
 Registration::SwMgmt.set_repos_state
 Registration::SwMgmt.update_product_renames
+Registration::SwMgmt.version_without_release
 Registration::SwMgmt::FAKE_BASE_PRODUCT
 Registration::SwMgmt::OEM_DIR
 Registration::SwMgmt::ZYPP_DIR
@@ -327,12 +350,12 @@ Registration::UI::AddonRegCodesDialog#run
 Registration::UI::AddonRegCodesDialog.run
 Registration::UI::AddonSelectionBaseDialog
 Registration::UI::AddonSelectionBaseDialog#addon_widget_id
-Registration::UI::AddonSelectionBaseDialog#filter_beta_releases
+Registration::UI::AddonSelectionBaseDialog#filter_devel_releases
 Registration::UI::AddonSelectionBaseDialog#initialize
 Registration::UI::AddonSelectionBaseDialog#run
-Registration::UI::AddonSelectionBaseDialog.filter_beta
-Registration::UI::AddonSelectionBaseDialog.filter_beta=
-Registration::UI::AddonSelectionBaseDialog::FILTER_BETAS_INITIALLY
+Registration::UI::AddonSelectionBaseDialog.filter_devel
+Registration::UI::AddonSelectionBaseDialog.filter_devel=
+Registration::UI::AddonSelectionBaseDialog::FILTER_DEVEL_INITIALLY
 Registration::UI::AddonSelectionRegistrationDialog
 Registration::UI::AddonSelectionRegistrationDialog#initialize
 Registration::UI::AddonSelectionRegistrationDialog#run
@@ -410,6 +433,9 @@ Registration::UI::NotInstalledProductsDialog#registration_ui=
 Registration::UI::NotInstalledProductsDialog#run
 Registration::UI::NotInstalledProductsDialog.run
 Registration::UI::NotInstalledProductsDialog::REGISTRATION_CHECK_MSG
+Registration::UI::OfflineMigrationWorkflow
+Registration::UI::OfflineMigrationWorkflow#initialize
+Registration::UI::OfflineMigrationWorkflow#main
 Registration::UI::RegisteredSystemDialog
 Registration::UI::RegisteredSystemDialog#addons
 Registration::UI::RegisteredSystemDialog#initialize

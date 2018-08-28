@@ -11,6 +11,7 @@ Yast.import
 Yast.include
 Yast.replace
 Yast.�
+Yast::AbortException
 Yast::ArgRef
 Yast::ArgRef#initialize
 Yast::ArgRef#value
