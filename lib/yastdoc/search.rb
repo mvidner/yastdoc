@@ -1,9 +1,8 @@
 require "pathname"
 
 module Yastdoc
+  # dead stupid index implementation: Array of pairs: [term, project name]
   class Search
-    # dead stupid index implementation: Array of pairs: [term, project name]
-
     # @param index_dir [String]
     def initialize(index_dir)
       @index = []
@@ -35,7 +34,7 @@ module Yastdoc
         path = term.gsub(/::/, "/").sub("#", ":")
         # Term:empty? -> Term%3Aempty%3F
         path = Rack::Utils.escape_path(path)
-        Result.new(term, "http://www.rubydoc.info/#{project}/#{path}")
+        Result.new(term, "http://www.rubydoc.info/#{project}/master/#{path}")
       end
       results.sort_by(&:text)
     end
