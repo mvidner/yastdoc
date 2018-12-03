@@ -51,6 +51,7 @@ Yast::KeyboardClass#GetKbdSysconfig
 Yast::KeyboardClass#GetKeyboardForLanguage
 Yast::KeyboardClass#GetKeyboardItems
 Yast::KeyboardClass#GetKeyboardName
+Yast::KeyboardClass#GetKeymapForLanguage
 Yast::KeyboardClass#GetX11KeyData
 Yast::KeyboardClass#Import
 Yast::KeyboardClass#Keyboard
@@ -155,6 +156,7 @@ Yast::LanguageClass#correct_language
 Yast::LanguageClass#integrate_inst_sys_extension
 Yast::LanguageClass#main
 Yast::LanguageClass#read_languages_map
+Yast::LanguageClass#supported_language?
 Yast::LanguageClass#valid_language?
 Yast::LanguageClass::DEFAULT_FALLBACK_LANGUAGE
 Yast::LanguageClient
@@ -212,7 +214,11 @@ Yast::TimezoneClass#get_zonemap
 Yast::TimezoneClass#main
 Yast::TimezoneClass#product_default_timezone
 Yast::TimezoneClass#readonly
+Yast::TimezoneClass#set_hwclock
+Yast::TimezoneClass#set_system_time
+Yast::TimezoneClass#sync_hwclock_to_system_time
 Yast::TimezoneClass#system_has_windows?
+Yast::TimezoneClass#tz_prefix
 Yast::TimezoneClass#utc_only
 Yast::TimezoneClass::FALLBACK_PRODUCT_DEFAULT_TIMEZONE
 Yast::TimezoneClient

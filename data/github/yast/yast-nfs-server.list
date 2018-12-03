@@ -14,6 +14,7 @@ Yast::NfsServerClass#Summary
 Yast::NfsServerClass#Write
 Yast::NfsServerClass#WriteExports
 Yast::NfsServerClass#main
+Yast::NfsServerClass::SERVICE
 Yast::NfsServerClient
 Yast::NfsServerClient#NfsServerAddHandler
 Yast::NfsServerClient#NfsServerDeleteHandler

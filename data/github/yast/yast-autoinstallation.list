@@ -591,6 +591,7 @@ Yast::InstAutopostClient#dirname
 Yast::InstAutopostClient#main
 Yast::InstAutosetupClient
 Yast::InstAutosetupClient#add_yast2_dependencies
+Yast::InstAutosetupClient#autosetup_security
 Yast::InstAutosetupClient#autosetup_users
 Yast::InstAutosetupClient#main
 Yast::InstAutosetupClient::Target

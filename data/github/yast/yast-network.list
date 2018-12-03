@@ -125,19 +125,15 @@ Yast::DNS
 Yast::DNSClass
 Yast::DNSClass#DefaultWriteHostname
 Yast::DNSClass#Export
-Yast::DNSClass#GetDHCPHostnameIP
 Yast::DNSClass#GetHostnameFromGetent
 Yast::DNSClass#Import
 Yast::DNSClass#IsHostLocal
 Yast::DNSClass#ProposeHostname
 Yast::DNSClass#Read
-Yast::DNSClass#ReadHostDomain
 Yast::DNSClass#ReadHostname
-Yast::DNSClass#ReadNameserver
 Yast::DNSClass#ResolveIP
 Yast::DNSClass#Summary
 Yast::DNSClass#Write
-Yast::DNSClass#create_hostname_link
 Yast::DNSClass#default_dhcp_hostname
 Yast::DNSClass#main
 Yast::DNSClass::HOSTNAME_FILE
@@ -217,11 +213,11 @@ Yast::LanClass#ReadWithCache
 Yast::LanClass#ReadWithCacheNoGUI
 Yast::LanClass#SetIPv6
 Yast::LanClass#Summary
-Yast::LanClass#SummaryGeneral
 Yast::LanClass#UpcaseCondSet
 Yast::LanClass#UseNetworkManager
 Yast::LanClass#Write
 Yast::LanClass#WriteOnly
+Yast::LanClass#dhcp_ntp_servers
 Yast::LanClass#isAnyInterfaceDown
 Yast::LanClass#main
 Yast::LanClass#readIPv6
@@ -237,7 +233,6 @@ Yast::LanItemsClass#Commit
 Yast::LanItemsClass#DeleteItem
 Yast::LanItemsClass#FindAndSelect
 Yast::LanItemsClass#FindDeviceIndex
-Yast::LanItemsClass#FreeDevices
 Yast::LanItemsClass#GetBondSlaves
 Yast::LanItemsClass#GetBondableInterfaces
 Yast::LanItemsClass#GetBridgeableInterfaces
@@ -300,11 +295,15 @@ Yast::LanItemsClass#current_renamed?
 Yast::LanItemsClass#current_renamed_to
 Yast::LanItemsClass#current_udev_name
 Yast::LanItemsClass#delete_dev
+Yast::LanItemsClass#dhcp_ntp_servers
 Yast::LanItemsClass#enableCurrentEditButton
+Yast::LanItemsClass#enslaved?
 Yast::LanItemsClass#export
 Yast::LanItemsClass#find_configured
 Yast::LanItemsClass#find_dhcp_ifaces
 Yast::LanItemsClass#find_set_hostname_ifaces
+Yast::LanItemsClass#find_static_ifaces
+Yast::LanItemsClass#find_type_ifaces
 Yast::LanItemsClass#firewall_zone
 Yast::LanItemsClass#firewall_zone=
 Yast::LanItemsClass#getCurrentItem
@@ -323,6 +322,8 @@ Yast::LanItemsClass#main
 Yast::LanItemsClass#needFirmwareCurrentItem
 Yast::LanItemsClass#new_device_startmode
 Yast::LanItemsClass#new_item_default_options
+Yast::LanItemsClass#new_type_device
+Yast::LanItemsClass#new_type_devices
 Yast::LanItemsClass#rename
 Yast::LanItemsClass#renamed?
 Yast::LanItemsClass#renamed_to
@@ -332,6 +333,7 @@ Yast::LanItemsClass#setDriver
 Yast::LanItemsClass#setup_basic_device_options
 Yast::LanItemsClass#setup_bonding
 Yast::LanItemsClass#setup_dhclient_options
+Yast::LanItemsClass#slaves_desc
 Yast::LanItemsClass#startmode_overview
 Yast::LanItemsClass#summary
 Yast::LanItemsClass#update_item_udev_rule!
@@ -343,6 +345,7 @@ Yast::LanItemsSummary
 Yast::LanItemsSummary#default
 Yast::LanItemsSummary#initialize
 Yast::LanItemsSummary#one_line
+Yast::LanItemsSummary#proposal
 Yast::NetHwDetection
 Yast::NetHwDetectionClass
 Yast::NetHwDetectionClass#DuplicateIP
@@ -388,10 +391,6 @@ Yast::NetworkHardwareInclude#FindHardware
 Yast::NetworkHardwareInclude#SelectHardware
 Yast::NetworkHardwareInclude#SelectHardwareMap
 Yast::NetworkHardwareInclude#initialize_network_hardware
-Yast::NetworkInstallationDialogsInclude
-Yast::NetworkInstallationDialogsInclude#AskForPassword
-Yast::NetworkInstallationDialogsInclude#ShowLogs
-Yast::NetworkInstallationDialogsInclude#initialize_network_installation_dialogs
 Yast::NetworkLanAddressInclude
 Yast::NetworkLanAddressInclude#AddressDialog
 Yast::NetworkLanAddressInclude#BuildTypesListCWM
@@ -410,7 +409,6 @@ Yast::NetworkLanAddressInclude#StoreVLANSlave
 Yast::NetworkLanAddressInclude#ValidateAddrIP
 Yast::NetworkLanAddressInclude#ValidateBootproto
 Yast::NetworkLanAddressInclude#ValidateIfcfgType
-Yast::NetworkLanAddressInclude#ValidateNetmask
 Yast::NetworkLanAddressInclude#ValueProp
 Yast::NetworkLanAddressInclude#address_tab
 Yast::NetworkLanAddressInclude#bond_slaves_tab
@@ -484,6 +482,7 @@ Yast::NetworkLanHardwareInclude#isNewDevice
 Yast::NetworkLanHardwareInclude#storeHW
 Yast::NetworkLanHardwareInclude#validate_hw
 Yast::NetworkLanHardwareInclude#widget_descr_hardware
+Yast::NetworkLanHardwareInclude::NEW_DEVICES_COUNT
 Yast::NetworkLanHardwareInclude::VLAN_SIZE
 Yast::NetworkLanHelpInclude
 Yast::NetworkLanHelpInclude#initialize_network_lan_help
@@ -545,6 +544,7 @@ Yast::NetworkProposal#ask_user
 Yast::NetworkProposal#description
 Yast::NetworkProposal#initialize
 Yast::NetworkProposal#make_proposal
+Yast::NetworkProposal::BACKEND_LINKS
 Yast::NetworkRoutinesInclude
 Yast::NetworkRoutinesInclude#Abort
 Yast::NetworkRoutinesInclude#ChangeWidgetIfExists
@@ -607,7 +607,6 @@ Yast::NetworkServicesDnsInclude#StoreDhcpHostname
 Yast::NetworkServicesDnsInclude#StoreHnSettings
 Yast::NetworkServicesDnsInclude#StoreHnWidget
 Yast::NetworkServicesDnsInclude#StoreSettings
-Yast::NetworkServicesDnsInclude#ValidateDomain
 Yast::NetworkServicesDnsInclude#ValidateHostname
 Yast::NetworkServicesDnsInclude#ValidateSearchList
 Yast::NetworkServicesDnsInclude#handleModifyResolvPolicy
@@ -637,6 +636,7 @@ Yast::NetworkServicesRoutingInclude#handleRouting
 Yast::NetworkServicesRoutingInclude#initRouting
 Yast::NetworkServicesRoutingInclude#initialize_network_services_routing
 Yast::NetworkServicesRoutingInclude#storeRouting
+Yast::NetworkServicesRoutingInclude#valid_gateway?
 Yast::NetworkServicesRoutingInclude#valid_netmask?
 Yast::NetworkServicesRoutingInclude#validateRouting
 Yast::NetworkSummaryInclude
@@ -765,5 +765,6 @@ Yast::SuSEFirewall4NetworkClass::SSH_PACKAGE
 Yast::SuSEFirewall4NetworkClass::SSH_SERVICES
 Yast::SuSEFirewall4NetworkClass::VNC_SERVICES
 Yast::Wicked
+Yast::Wicked#parse_ntp_servers
 Yast::Wicked#reload_config
 Yast::Wicked::BASH_PATH

@@ -52,6 +52,14 @@ Y2Packager::Repository.enabled
 Y2Packager::Repository.find
 Y2Packager::Repository::LOCAL_SCHEMES
 Y2Packager::Repository::NotFound
+Y2Packager::SelfUpdateAddonFilter
+Y2Packager::SelfUpdateAddonFilter.packages
+Y2Packager::SelfUpdateAddonFilter::PROVIDES
+Y2Packager::SelfUpdateAddonRepo
+Y2Packager::SelfUpdateAddonRepo.copy_packages
+Y2Packager::SelfUpdateAddonRepo.create_repo
+Y2Packager::SelfUpdateAddonRepo.present?
+Y2Packager::SelfUpdateAddonRepo::REPO_PATH
 Y2Packager::StorageManagerProxy
 Y2Packager::StorageManagerProxy#initialize
 Y2Packager::StorageManagerProxy#manager
@@ -254,7 +262,10 @@ Yast::InstProductsourcesClient#UseDownloadFile
 Yast::InstProductsourcesClient#UserWantsToAbort
 Yast::InstProductsourcesClient#WriteDialog
 Yast::InstProductsourcesClient#main
+Yast::InstProductsourcesClient::@@ask_activate_online_repos_result
+Yast::InstProductsourcesClient::@@posted_low_memory_warning
 Yast::InstProductsourcesClient::LOW_MEMORY_MIB
+Yast::InstProductsourcesClient::RELEASEVER_ENV
 Yast::InstRpmcopyClient
 Yast::InstRpmcopyClient#AutoinstPostPackages
 Yast::InstRpmcopyClient#CountStartingAndMaxMediaNumber
@@ -434,7 +445,6 @@ Yast::PackagesClass#Proposal
 Yast::PackagesClass#Reset
 Yast::PackagesClass#ResetProposalCache
 Yast::PackagesClass#SelectKernelPackages
-Yast::PackagesClass#SelectProduct
 Yast::PackagesClass#SelectSystemPackages
 Yast::PackagesClass#SelectSystemPatterns
 Yast::PackagesClass#SlideShowSetUp
@@ -447,6 +457,7 @@ Yast::PackagesClass#addAdditionalPackage
 Yast::PackagesClass#architecturePackages
 Yast::PackagesClass#boardPackages
 Yast::PackagesClass#braille_packages
+Yast::PackagesClass#check_ntp_installation_packages
 Yast::PackagesClass#check_remote_installation_packages
 Yast::PackagesClass#default_patterns
 Yast::PackagesClass#extra_system_patterns
@@ -478,7 +489,6 @@ Yast::PackagesClass::FIPS_PATTERN
 Yast::PackagesClass::GRAPHIC_PACKAGES
 Yast::PackagesClass::LOG_RESOLVABLE_STATUS
 Yast::PackagesClass::LOG_RESOLVABLE_TRANSACT_BY
-Yast::PackagesClass::PRODUCT_CONFLICTS
 Yast::PackagesClass::REMOTE_X11_BASE_TAGS
 Yast::PackagesClass::RESOLVABLE_SORT_ORDER
 Yast::PackagesClass::RESOLVABLE_TYPES

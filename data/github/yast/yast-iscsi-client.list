@@ -121,6 +121,7 @@ Yast::IscsiClientWidgetsInclude#initialize_iscsi_client_widgets
 Yast::IscsiClientWidgetsInclude#runInBg
 Yast::IscsiClientWidgetsInclude#setDiscoveredButtons
 Yast::IscsiClientWidgetsInclude#setRecord
+Yast::IscsiClientWidgetsInclude#startup_items
 Yast::IscsiClientWidgetsInclude#storeISNS
 Yast::IscsiClientWidgetsInclude#storeInitName
 Yast::IscsiClientWidgetsInclude#validateConnAuth

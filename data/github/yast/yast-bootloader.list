@@ -42,6 +42,7 @@ Bootloader::BootloaderBase
 Bootloader::BootloaderBase#initialize
 Bootloader::BootloaderBase#merge
 Bootloader::BootloaderBase#packages
+Bootloader::BootloaderBase#prepare
 Bootloader::BootloaderBase#propose
 Bootloader::BootloaderBase#proposed?
 Bootloader::BootloaderBase#read

@@ -69,6 +69,7 @@ Y2ServicesManager::Widgets::Base
 Y2ServicesManager::Widgets::Base#id
 Y2ServicesManager::Widgets::Base#initialize
 Y2ServicesManager::Widgets::LogsButton
+Y2ServicesManager::Widgets::LogsButton#help
 Y2ServicesManager::Widgets::LogsButton#initialize
 Y2ServicesManager::Widgets::LogsButton#widget
 Y2ServicesManager::Widgets::ServicesTable
@@ -81,16 +82,20 @@ Y2ServicesManager::Widgets::ServicesTable#selected_service
 Y2ServicesManager::Widgets::ServicesTable#selected_service_name
 Y2ServicesManager::Widgets::ServicesTable#widget
 Y2ServicesManager::Widgets::ShowDetailsButton
+Y2ServicesManager::Widgets::ShowDetailsButton#help
 Y2ServicesManager::Widgets::ShowDetailsButton#initialize
 Y2ServicesManager::Widgets::ShowDetailsButton#widget
 Y2ServicesManager::Widgets::StartModeButton
+Y2ServicesManager::Widgets::StartModeButton#help
 Y2ServicesManager::Widgets::StartModeButton#initialize
 Y2ServicesManager::Widgets::StartModeButton#widget
 Y2ServicesManager::Widgets::StartModeButton.all_start_modes
 Y2ServicesManager::Widgets::StartStopButton
+Y2ServicesManager::Widgets::StartStopButton#help
 Y2ServicesManager::Widgets::StartStopButton#initialize
 Y2ServicesManager::Widgets::StartStopButton#widget
 Y2ServicesManager::Widgets::TargetSelector
+Y2ServicesManager::Widgets::TargetSelector#help
 Y2ServicesManager::Widgets::TargetSelector#initialize
 Y2ServicesManager::Widgets::TargetSelector#refresh
 Y2ServicesManager::Widgets::TargetSelector#value
@@ -180,6 +185,7 @@ Yast::ServicesManagerTargetClass#import
 Yast::ServicesManagerTargetClass#initialize
 Yast::ServicesManagerTargetClass#inspect
 Yast::ServicesManagerTargetClass#modified
+Yast::ServicesManagerTargetClass#modified=
 Yast::ServicesManagerTargetClass#modified?
 Yast::ServicesManagerTargetClass#proposal_reason
 Yast::ServicesManagerTargetClass#proposal_reason=

@@ -84,6 +84,11 @@ Yast::SecurityDialogsInclude#PassDialog
 Yast::SecurityDialogsInclude#SecurityStatus
 Yast::SecurityDialogsInclude#initialize_security_dialogs
 Yast::SecurityDialogsInclude#vbox_boot_permissions
+Yast::SecurityFinishClient
+Yast::SecurityFinishClient#initialize
+Yast::SecurityFinishClient#modes
+Yast::SecurityFinishClient#title
+Yast::SecurityFinishClient#write
 Yast::SecurityHelpsInclude
 Yast::SecurityHelpsInclude#boot_dialog_help
 Yast::SecurityHelpsInclude#initialize_security_helps
