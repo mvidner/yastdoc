@@ -64,6 +64,9 @@ Bootloader::BootloaderFactory::SUPPORTED_BOOTLOADERS
 Bootloader::BootloaderTab
 Bootloader::BootloaderTab#contents
 Bootloader::BootloaderTab#label
+Bootloader::BrokenByPathDeviceName
+Bootloader::BrokenByPathDeviceName#dev_name
+Bootloader::BrokenByPathDeviceName#initialize
 Bootloader::BrokenConfiguration
 Bootloader::BrokenConfiguration#initialize
 Bootloader::BrokenConfiguration#reason
@@ -142,6 +145,7 @@ Bootloader::Grub2#write_sysconfig
 Bootloader::Grub2Base
 Bootloader::Grub2Base#disable_serial_console
 Bootloader::Grub2Base#enable_serial_console
+Bootloader::Grub2Base#explicit_smt
 Bootloader::Grub2Base#grub_default
 Bootloader::Grub2Base#grub_default=
 Bootloader::Grub2Base#initialize
@@ -154,6 +158,8 @@ Bootloader::Grub2Base#pmbr_setup
 Bootloader::Grub2Base#propose
 Bootloader::Grub2Base#read
 Bootloader::Grub2Base#sections
+Bootloader::Grub2Base#smt
+Bootloader::Grub2Base#smt=
 Bootloader::Grub2Base#trusted_boot
 Bootloader::Grub2Base#trusted_boot=
 Bootloader::Grub2Base#write
@@ -284,6 +290,12 @@ Bootloader::SerialConsole::PARITY_DEFAULT
 Bootloader::SerialConsole::PARITY_MAP
 Bootloader::SerialConsole::SPEED_DEFAULT
 Bootloader::SerialConsole::WORD_DEFAULT
+Bootloader::Smt
+Bootloader::Smt#help
+Bootloader::Smt#init
+Bootloader::Smt#initialize
+Bootloader::Smt#label
+Bootloader::Smt#store
 Bootloader::Stage1
 Bootloader::Stage1#add_udev_device
 Bootloader::Stage1#available_locations
@@ -361,7 +373,9 @@ Yast::BootArchClass
 Yast::BootArchClass#DefaultKernelParams
 Yast::BootArchClass#ResumeAvailable
 Yast::BootArchClass#main
+Yast::BootArchClass#smt_settings
 Yast::BootArchClass::S390_WHITELIST
+Yast::BootArchClass::SMT_DEFAULT
 Yast::BootStorage
 Yast::BootStorageClass
 Yast::BootStorageClass#available_swap_partitions

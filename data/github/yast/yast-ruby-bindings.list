@@ -254,6 +254,7 @@ Yast::Term#params
 Yast::Term#size
 Yast::Term#to_s
 Yast::Term#value
+Yast::Translation
 Yast::UIShortcuts
 Yast::UIShortcuts::UI_TERMS
 Yast::WFM
@@ -281,6 +282,7 @@ Yast::Y2Logger#add
 Yast::Y2Logger#initialize
 Yast::Y2Logger::CALL_FRAME
 Yast::Y2StartHelpers
+Yast::Y2StartHelpers.config_env
 Yast::Y2StartHelpers.help
 Yast::Y2StartHelpers.parse_arguments
 Yast::Y2StartHelpers.setup_signals

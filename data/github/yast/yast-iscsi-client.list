@@ -99,6 +99,7 @@ Yast::IscsiClientLibClass#start_iscsid_initial
 Yast::IscsiClientLibClass#start_services_initial
 Yast::IscsiClientLibClass#useISNS
 Yast::IscsiClientLibClass#writeInitiatorName
+Yast::IscsiClientLibClass::OFFLOAD_SCRIPT
 Yast::IscsiClientProposalClient
 Yast::IscsiClientProposalClient#main
 Yast::IscsiClientWidgetsInclude

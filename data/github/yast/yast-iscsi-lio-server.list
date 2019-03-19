@@ -113,6 +113,9 @@ DiscoveryAuth#store_mutual_userid
 DiscoveryAuth#store_password
 DiscoveryAuth#store_status
 DiscoveryAuth#store_userid
+DiscoveryAuth::RestrictedRecorder
+DiscoveryAuth::RestrictedRecorder#initialize
+DiscoveryAuth::RestrictedRecorder#record_stdout
 DiscoveryAuthWidget
 DiscoveryAuthWidget#contents
 DiscoveryAuthWidget#disable_discovery_auth_widgets

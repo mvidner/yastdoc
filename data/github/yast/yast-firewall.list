@@ -2,6 +2,9 @@
 .macro.seeCustomWidget
 .macro.seeDialog
 Y2Firewall
+Y2Firewall::Autoyast
+Y2Firewall::Autoyast#export
+Y2Firewall::Autoyast#import
 Y2Firewall::Clients
 Y2Firewall::Clients::Auto
 Y2Firewall::Clients::Auto#change
@@ -58,7 +61,6 @@ Y2Firewall::Dialogs::ChangeZone#initialize
 Y2Firewall::Dialogs::ChangeZone#interface
 Y2Firewall::Dialogs::ChangeZone#title
 Y2Firewall::Dialogs::DescriptionWidget
-Y2Firewall::Dialogs::DescriptionWidget#focus
 Y2Firewall::Dialogs::DescriptionWidget#init
 Y2Firewall::Dialogs::DescriptionWidget#initialize
 Y2Firewall::Dialogs::DescriptionWidget#label
@@ -77,6 +79,7 @@ Y2Firewall::Dialogs::Main#should_open_dialog?
 Y2Firewall::Dialogs::Main#skip_store_for
 Y2Firewall::Dialogs::Main#title
 Y2Firewall::Dialogs::MasqueradeWidget
+Y2Firewall::Dialogs::MasqueradeWidget#help
 Y2Firewall::Dialogs::MasqueradeWidget#init
 Y2Firewall::Dialogs::MasqueradeWidget#initialize
 Y2Firewall::Dialogs::MasqueradeWidget#label
@@ -86,7 +89,6 @@ Y2Firewall::Dialogs::ModifyZoneInterfaces#contents
 Y2Firewall::Dialogs::ModifyZoneInterfaces#initialize
 Y2Firewall::Dialogs::ModifyZoneInterfaces#title
 Y2Firewall::Dialogs::NameWidget
-Y2Firewall::Dialogs::NameWidget#focus
 Y2Firewall::Dialogs::NameWidget#init
 Y2Firewall::Dialogs::NameWidget#initialize
 Y2Firewall::Dialogs::NameWidget#label
@@ -103,7 +105,6 @@ Y2Firewall::Dialogs::Proposal#next_button
 Y2Firewall::Dialogs::Proposal#should_open_dialog?
 Y2Firewall::Dialogs::Proposal#title
 Y2Firewall::Dialogs::ShortWidget
-Y2Firewall::Dialogs::ShortWidget#focus
 Y2Firewall::Dialogs::ShortWidget#init
 Y2Firewall::Dialogs::ShortWidget#initialize
 Y2Firewall::Dialogs::ShortWidget#label
@@ -120,9 +121,6 @@ Y2Firewall::Dialogs::Zone#abort_button
 Y2Firewall::Dialogs::Zone#contents
 Y2Firewall::Dialogs::Zone#initialize
 Y2Firewall::Dialogs::Zone#title
-Y2Firewall::Importer
-Y2Firewall::Importer#import
-Y2Firewall::Importer#strategy_for
 Y2Firewall::ImporterStrategies
 Y2Firewall::ImporterStrategies::Firewalld
 Y2Firewall::ImporterStrategies::Firewalld#import
@@ -271,11 +269,8 @@ Y2Firewall::Widgets::Pages::ServicesTab#initialize
 Y2Firewall::Widgets::Pages::ServicesTab#label
 Y2Firewall::Widgets::Pages::Startup
 Y2Firewall::Widgets::Pages::Startup#contents
-Y2Firewall::Widgets::Pages::Startup#handle
-Y2Firewall::Widgets::Pages::Startup#help
 Y2Firewall::Widgets::Pages::Startup#initialize
 Y2Firewall::Widgets::Pages::Startup#label
-Y2Firewall::Widgets::Pages::Startup#store
 Y2Firewall::Widgets::Pages::Zone
 Y2Firewall::Widgets::Pages::Zone#contents
 Y2Firewall::Widgets::Pages::Zone#initialize

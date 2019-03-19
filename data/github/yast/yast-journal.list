@@ -37,7 +37,6 @@ Y2Journal::Journalctl#matches
 Y2Journal::Journalctl#options
 Y2Journal::Journalctl#output
 Y2Journal::Journalctl::BASH_SCR_PATH
-Y2Journal::Journalctl::COMMAND
 Y2Journal::Journalctl::PRIORITIES
 Y2Journal::Journalctl::TIME_FORMAT
 Y2Journal::JournalctlException

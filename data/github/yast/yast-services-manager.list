@@ -52,6 +52,7 @@ Y2ServicesManager::ServiceLoader#supported_unit_files
 Y2ServicesManager::ServiceLoader#supported_units
 Y2ServicesManager::ServiceLoader#unit_files
 Y2ServicesManager::ServiceLoader#units
+Y2ServicesManager::ServiceLoader.chroot_env?
 Y2ServicesManager::ServiceLoader::COMMAND_OPTIONS
 Y2ServicesManager::ServiceLoader::DEFAULT_SERVICE_SETTINGS
 Y2ServicesManager::ServiceLoader::LIST_UNITS_COMMAND
@@ -170,7 +171,6 @@ Yast::ServicesManagerServiceClass#state
 Yast::ServicesManagerServiceClass#status
 Yast::ServicesManagerServiceClass#substate
 Yast::ServicesManagerServiceClass#switch
-Yast::ServicesManagerServiceClass::SERVICE_SUFFIX
 Yast::ServicesManagerServiceClass::START_MODE
 Yast::ServicesManagerTarget
 Yast::ServicesManagerTargetClass

@@ -28,6 +28,13 @@ Y2Packager::Dialogs::ProductLicenseTranslations#initialize
 Y2Packager::Dialogs::ProductLicenseTranslations#language
 Y2Packager::Dialogs::ProductLicenseTranslations#product
 Y2Packager::Dialogs::ProductLicenseTranslations#title
+Y2Packager::KnownRepositories
+Y2Packager::KnownRepositories#initialize
+Y2Packager::KnownRepositories#new_repositories
+Y2Packager::KnownRepositories#repositories
+Y2Packager::KnownRepositories#update
+Y2Packager::KnownRepositories#write
+Y2Packager::KnownRepositories::STATUS_FILE
 Y2Packager::ProductLocation
 Y2Packager::ProductLocation#dir
 Y2Packager::ProductLocation#initialize
@@ -65,6 +72,11 @@ Y2Packager::StorageManagerProxy#initialize
 Y2Packager::StorageManagerProxy#manager
 Y2Packager::StorageManagerProxy#staging
 Y2Packager::StorageManagerProxy#staging_revision
+Y2Packager::SystemPackages
+Y2Packager::SystemPackages#initialize
+Y2Packager::SystemPackages#packages
+Y2Packager::SystemPackages#repositories
+Y2Packager::SystemPackages#select
 Y2Packager::Widgets
 Y2Packager::Widgets::LicenseTranslationsButton
 Y2Packager::Widgets::LicenseTranslationsButton#handle
@@ -91,6 +103,7 @@ Y2Packager::Widgets::ProductLicenseConfirmation#store
 Y2Packager::Widgets::ProductLicenseConfirmation#validate
 Y2Packager::Widgets::ProductLicenseContent
 Y2Packager::Widgets::ProductLicenseContent#contents
+Y2Packager::Widgets::ProductLicenseContent#help
 Y2Packager::Widgets::ProductLicenseContent#init
 Y2Packager::Widgets::ProductLicenseContent#initialize
 Y2Packager::Widgets::ProductLicenseContent#language
@@ -288,6 +301,8 @@ Yast::InstURLClass#GetURLOptions
 Yast::InstURLClass#HidePassword
 Yast::InstURLClass#RewriteCDUrl
 Yast::InstURLClass#SSLVerificationEnabled
+Yast::InstURLClass#fallback_repo?
+Yast::InstURLClass#fallback_repo_url
 Yast::InstURLClass#installInf2Url
 Yast::InstURLClass#main
 Yast::KeyManager
@@ -439,12 +454,10 @@ Yast::PackagesClass#Initialize_StageInitial
 Yast::PackagesClass#Initialize_StageNonInitial
 Yast::PackagesClass#IntegrateServicePack
 Yast::PackagesClass#ListSelected
-Yast::PackagesClass#LocaleVersions
 Yast::PackagesClass#PackagesProposalChanged
 Yast::PackagesClass#Proposal
 Yast::PackagesClass#Reset
 Yast::PackagesClass#ResetProposalCache
-Yast::PackagesClass#SelectKernelPackages
 Yast::PackagesClass#SelectSystemPackages
 Yast::PackagesClass#SelectSystemPatterns
 Yast::PackagesClass#SlideShowSetUp
@@ -477,6 +490,7 @@ Yast::PackagesClass#remote_x11_packages
 Yast::PackagesClass#repo_schemes
 Yast::PackagesClass#resolvable_mandatory_patterns
 Yast::PackagesClass#resolvable_optional_patterns
+Yast::PackagesClass#select_system_patterns_actions
 Yast::PackagesClass#sourceAccessPackages
 Yast::PackagesClass#ssh_packages
 Yast::PackagesClass#vnc_packages
@@ -514,6 +528,7 @@ Yast::ProductLicenseClass#AskLicensesAgreement
 Yast::ProductLicenseClass#AskLicensesAgreementWithHeading
 Yast::ProductLicenseClass#CleanUp
 Yast::ProductLicenseClass#DisplayLicenseDialogWithTitle
+Yast::ProductLicenseClass#GetLicenseDialogHelp
 Yast::ProductLicenseClass#HandleLicenseDialogRet
 Yast::ProductLicenseClass#SetAcceptanceNeeded
 Yast::ProductLicenseClass#ShowFullScreenLicenseInInstallation
@@ -657,7 +672,6 @@ Yast::SourceDialogsClass#GetRepoName
 Yast::SourceDialogsClass#GetURL
 Yast::SourceDialogsClass#InitDiskWidget
 Yast::SourceDialogsClass#InitFocusServerInit
-Yast::SourceDialogsClass#IsAnyNetworkAvailable
 Yast::SourceDialogsClass#IsISOURL
 Yast::SourceDialogsClass#IsPlainDir
 Yast::SourceDialogsClass#IsoHandle
@@ -731,6 +745,7 @@ Yast::SourceDialogsClass#main
 Yast::SourceDialogsClass#network_button
 Yast::SourceDialogsClass#scc_repos_widget
 Yast::SourceDialogsClass#valid_scheme?
+Yast::SourceDialogsClass::FILE_BIN
 Yast::SourceDialogsClass::SPECIAL_TYPES
 Yast::SourceDialogsClass::VALID_URL_SCHEMES
 Yast::SourceDialogsClass::WIDGET_LABELS
@@ -785,6 +800,7 @@ Yast::SourceManagerSLPClass#SearchForSLPServicesInfo
 Yast::SourceManagerSLPClass#SelectOneSLPService
 Yast::SourceManagerSLPClass#SetSearchUI
 Yast::SourceManagerSLPClass#ShowDetailsDialog
+Yast::SourceManagerSLPClass#firewalld
 Yast::SourceManagerSLPClass#main
 Yast::SpaceCalculation
 Yast::SpaceCalculationClass
@@ -826,5 +842,7 @@ Yast::SwSingleClient#GetPackagerOptions
 Yast::SwSingleClient#StartSWSingle
 Yast::SwSingleClient#VersionALtB
 Yast::SwSingleClient#main
+Yast::SwSingleClient#preselect_system_packages
+Yast::SwSingleClient#save_known_repositories
 Yast::WrapperSlideshowCallbacksClient
 Yast::WrapperSlideshowCallbacksClient#main

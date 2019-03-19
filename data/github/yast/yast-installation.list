@@ -69,12 +69,14 @@ Installation::DriverUpdate::PreScriptFailed
 Installation::InstKeyboardRootPassword
 Installation::InstKeyboardRootPassword#run
 Installation::InstsysCleaner
+Installation::InstsysCleaner.libzypp_waterline
 Installation::InstsysCleaner.make_clean
 Installation::InstsysCleaner::KERNEL_MODULES_MOUNT_POINT
 Installation::InstsysCleaner::KERNEL_MODULES_WATERLINE
 Installation::InstsysCleaner::LIBZYPP_CACHE_PATH
 Installation::InstsysCleaner::LIBZYPP_CLEANUP_PATTERNS
-Installation::InstsysCleaner::LIBZYPP_WATERLINE
+Installation::InstsysCleaner::LIBZYPP_WATERLINE_GUI
+Installation::InstsysCleaner::LIBZYPP_WATERLINE_TUI
 Installation::MinimalInstallation
 Installation::MinimalInstallation#enabled
 Installation::MinimalInstallation#enabled?
@@ -421,10 +423,6 @@ Yast::InstAddonUpdateSourcesClient
 Yast::InstAddonUpdateSourcesClient#KnownUrls
 Yast::InstAddonUpdateSourcesClient#UpdateUrls
 Yast::InstAddonUpdateSourcesClient#main
-Yast::InstAskOnlineUpdateClient
-Yast::InstAskOnlineUpdateClient#main
-Yast::InstCheckAutoinstModeClient
-Yast::InstCheckAutoinstModeClient#main
 Yast::InstComplexWelcomeClient
 Yast::InstComplexWelcomeClient#main
 Yast::InstComplexWelcomeClient::BETA_FILE
@@ -466,6 +464,7 @@ Yast::InstExtrasourcesClient#RevertUpgradeFrom
 Yast::InstExtrasourcesClient#UpgradeFrom
 Yast::InstExtrasourcesClient#UpgradesAvailable
 Yast::InstExtrasourcesClient#main
+Yast::InstExtrasourcesClient#save_system_packages_repos
 Yast::InstFeaturesClient
 Yast::InstFeaturesClient#main
 Yast::InstFinishClient
@@ -519,11 +518,6 @@ Yast::InstRpmcopySecondstageClient
 Yast::InstRpmcopySecondstageClient#main
 Yast::InstSaveHardwareStatusClient
 Yast::InstSaveHardwareStatusClient#main
-Yast::InstScenariosClient
-Yast::InstScenariosClient#GetDialogContents
-Yast::InstScenariosClient#SelectAppropriateRadioButton
-Yast::InstScenariosClient#SelectPatterns
-Yast::InstScenariosClient#main
 Yast::InstSystemAnalysisClient
 Yast::InstSystemAnalysisClient#ActionFireWire
 Yast::InstSystemAnalysisClient#ActionHDDProbe
@@ -610,6 +604,7 @@ Yast::InstallationInstIncFirstInclude#InitMouse
 Yast::InstallationInstIncFirstInclude#SetInitialInstallation
 Yast::InstallationInstIncFirstInclude#SetSystemUpdate
 Yast::InstallationInstIncFirstInclude#initialize_installation_inst_inc_first
+Yast::InstallationInstIncFirstInclude::ZYPP_DATA
 Yast::InstallationInstIncSecondInclude
 Yast::InstallationInstIncSecondInclude#AdjustDisabledItems
 Yast::InstallationInstIncSecondInclude#AdjustDisabledModules
@@ -699,8 +694,6 @@ Yast::UmountFinishClient#set_btrfs_defaults_as_ro
 Yast::UmountFinishClient::BTRFS_FS_TREE
 Yast::UmountFinishClient::EFIVARS_PATH
 Yast::UmountFinishClient::USB_PATH
-Yast::UpdateWizardStepsClient
-Yast::UpdateWizardStepsClient#main
 Yast::Vendor
 Yast::VendorClass
 Yast::VendorClass#DriverUpdate1

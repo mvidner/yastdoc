@@ -678,6 +678,7 @@ Yast::Y2ModuleConfigClass#getModuleConfig
 Yast::Y2ModuleConfigClass#getResource
 Yast::Y2ModuleConfigClass#getResourceData
 Yast::Y2ModuleConfigClass#main
+Yast::Y2ModuleConfigClass#required_packages
 Yast::Y2ModuleConfigClass#resource_aliases_map
 Yast::Y2ModuleConfigClass#unhandled_profile_sections
 Yast::Y2ModuleConfigClass#unsupported_profile_sections
@@ -685,3 +686,5 @@ Yast::Y2ModuleConfigClass::MODES
 Yast::Y2ModuleConfigClass::RESOURCE_ALIASES_NAME_KEY
 Yast::Y2ModuleConfigClass::RESOURCE_NAME_KEY
 Yast::Y2ModuleConfigClass::RESOURCE_NAME_MERGE_KEYS
+Yast::Y2ModuleConfigClass::SCHEMA_PACKAGE_FILE
+Yast::Y2ModuleConfigClass::YAST_SCHEMA_DIR
