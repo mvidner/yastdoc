@@ -48,6 +48,10 @@ Installation::Dialogs::ComplexWelcome#products
 Installation::Dialogs::ComplexWelcome#run
 Installation::Dialogs::ComplexWelcome#skip_store_for
 Installation::Dialogs::ComplexWelcome#title
+Installation::Dialogs::NtpSetup
+Installation::Dialogs::NtpSetup#contents
+Installation::Dialogs::NtpSetup#initialize
+Installation::Dialogs::NtpSetup#title
 Installation::Dialogs::ProductSelection
 Installation::Dialogs::ProductSelection#contents
 Installation::Dialogs::ProductSelection#initialize
@@ -322,6 +326,15 @@ Installation::Widgets::HidingPlace#hide
 Installation::Widgets::HidingPlace#initialize
 Installation::Widgets::HidingPlace#show
 Installation::Widgets::HidingPlace#store
+Installation::Widgets::NtpServer
+Installation::Widgets::NtpServer#default_servers
+Installation::Widgets::NtpServer#help
+Installation::Widgets::NtpServer#init
+Installation::Widgets::NtpServer#initialize
+Installation::Widgets::NtpServer#label
+Installation::Widgets::NtpServer#store
+Installation::Widgets::NtpServer#validate
+Installation::Widgets::NtpServer::NOT_VALID_SERVERS_MESSAGE
 Installation::Widgets::OnlineRepos
 Installation::Widgets::OnlineRepos#handle
 Installation::Widgets::OnlineRepos#initialize

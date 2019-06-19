@@ -458,6 +458,7 @@ Registration::UI::RegisteredSystemDialog.run
 Registration::UI::RegistrationSyncWorkflow
 Registration::UI::RegistrationSyncWorkflow#initialize
 Registration::UI::RegistrationSyncWorkflow#run_sequence
+Registration::UI::RegistrationSyncWorkflow::SYNC_FALLBACKS
 Registration::UI::RegistrationUpdateDialog
 Registration::UI::RegistrationUpdateDialog#initialize
 Registration::UI::RegistrationUpdateDialog#registration

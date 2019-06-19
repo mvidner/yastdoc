@@ -1,3 +1,4 @@
+#shellwords
 Yast
 Yast::Printer
 Yast::PrinterAutoClient
@@ -49,6 +50,7 @@ Yast::PrinterConnectionwizardInclude#getCurrentDeviceURI
 Yast::PrinterConnectionwizardInclude#getNetworkContent
 Yast::PrinterConnectionwizardInclude#getUriWithUsernameAndPassword
 Yast::PrinterConnectionwizardInclude#initialize_printer_connectionwizard
+Yast::PrinterConnectionwizardInclude#run_test_command
 Yast::PrinterDialogsInclude
 Yast::PrinterDialogsInclude#initialize_printer_dialogs
 Yast::PrinterDialogsInclude#runAutoDialog

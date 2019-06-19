@@ -8,6 +8,8 @@ Migration::MainWorkflow#run
 Migration::MainWorkflow.run
 Migration::MainWorkflow::CREATE_SNAPSHOT_CMD
 Migration::MainWorkflow::FIND_CONFIG_CMD
+Migration::MainWorkflow::VENDOR_CONTENT
+Migration::MainWorkflow::VENDOR_FILE
 Migration::Patches
 Migration::Patches#available?
 Migration::Patches#initialize

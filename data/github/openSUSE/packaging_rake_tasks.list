@@ -37,5 +37,13 @@ Packaging::Configuration#skip_license_check
 Packaging::Configuration#skip_license_check=
 Packaging::Configuration#version
 Packaging::Configuration#version=
+Packaging::GitHelpers
+Packaging::GitHelpers#branch_name
+Packaging::GitHelpers#create_version_tag
+Packaging::GitHelpers#git
+Packaging::GitHelpers#master?
+Packaging::GitHelpers#spec_version
+Packaging::GitHelpers#tag_exists?
+Packaging::GitHelpers#tag_name
 Packaging::Tasks
 Packaging::Tasks.load_tasks

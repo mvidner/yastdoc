@@ -8,6 +8,9 @@ Yast::AutologinClass#Read
 Yast::AutologinClass#Use
 Yast::AutologinClass#Write
 Yast::AutologinClass#main
+Yast::AutologinClass#pkg_lazy_init
+Yast::AutologinClass#supported?
+Yast::AutologinClass::DISPLAY_MANAGERS
 Yast::Nsswitch
 Yast::NsswitchClass
 Yast::NsswitchClass#ReadDb

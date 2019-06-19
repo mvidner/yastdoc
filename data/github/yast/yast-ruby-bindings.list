@@ -259,7 +259,6 @@ Yast::UIShortcuts
 Yast::UIShortcuts::UI_TERMS
 Yast::WFM
 Yast::WFM#call
-Yast::WFM#self
 Yast::WFM.Args
 Yast::WFM.CallFunction
 Yast::WFM.ClientExists

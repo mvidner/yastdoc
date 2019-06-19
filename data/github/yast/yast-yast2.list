@@ -520,6 +520,8 @@ Y2Firewall::Firewalld::Zone#full_name
 Y2Firewall::Firewalld::Zone#initialize
 Y2Firewall::Firewalld::Zone#masquerade=
 Y2Firewall::Firewalld::Zone#masquerade?
+Y2Firewall::Firewalld::Zone#name
+Y2Firewall::Firewalld::Zone#name=
 Y2Firewall::Firewalld::Zone#read
 Y2Firewall::Firewalld::Zone#reload!
 Y2Firewall::Firewalld::Zone#service_open?
@@ -654,7 +656,11 @@ Y2Packager::ProductReader#product_package
 Y2Packager::ProductReader.installation_package_mapping
 Y2Packager::ProductUpgrade
 Y2Packager::ProductUpgrade.new_base_product
+Y2Packager::ProductUpgrade.obsolete_upgrades
+Y2Packager::ProductUpgrade.remove_obsolete_upgrades
+Y2Packager::ProductUpgrade.will_be_obsoleted_by
 Y2Packager::ProductUpgrade::MAPPING
+Y2Packager::ProductUpgrade::UPGRADE_REMOVAL_MAPPING
 Y2Packager::ReleaseNotes
 Y2Packager::ReleaseNotes#content
 Y2Packager::ReleaseNotes#format
@@ -727,6 +733,8 @@ Yast2::CompoundService#support_reload?
 Yast2::CompoundService#support_start_on_boot?
 Yast2::CompoundService#support_start_on_demand?
 Yast2::CompoundService::AUTOSTART_OPTIONS
+Yast2::ControlLogDirRotator
+Yast2::ControlLogDirRotator::NAME
 Yast2::Feedback
 Yast2::Feedback#start
 Yast2::Feedback#stop
@@ -765,6 +773,13 @@ Yast2::HwDetection
 Yast2::HwDetection.memory
 Yast2::HwDetection::MEMORY_CLASS
 Yast2::HwDetection::MEMORY_SUBCLASS
+Yast2::LogDirRotator
+Yast2::LogDirRotator#copy
+Yast2::LogDirRotator#log_dir
+Yast2::LogDirRotator#prepare
+Yast2::LogDirRotator#write
+Yast2::LogDirRotator::KEEP_OLD_LOG_DIRS
+Yast2::LogDirRotator::NAME
 Yast2::Popup
 Yast2::Popup.show
 Yast2::Popup::LINES_THRESHOLD
@@ -3116,7 +3131,6 @@ Yast::WizardClass#main
 Yast::WizardClass#open_wizard_dialog
 Yast::WizardClass#set_icon
 Yast::WizardClass::DEFAULT_ICON_NAME
-Yast::WizardClass::FALLBACK_ICON_DIR
 Yast::WizardHW
 Yast::WizardHWClass
 Yast::WizardHWClass#CreateActionsButton
