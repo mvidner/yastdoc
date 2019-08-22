@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.6.1'
+lock '~> 3.6'
 
 set :application, 'yastdoc'
 set :repo_url, 'https://github.com/mvidner/yastdoc.git'
