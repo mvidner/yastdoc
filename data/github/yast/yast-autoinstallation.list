@@ -3,6 +3,14 @@ Y2Autoinstall::Clients
 Y2Autoinstall::Clients::AyastProbe
 Y2Autoinstall::Clients::AyastProbe#content
 Y2Autoinstall::Clients::AyastProbe#main
+Y2Autoinstall::Clients::AyastSetup
+Y2Autoinstall::Clients::AyastSetup#Setup
+Y2Autoinstall::Clients::AyastSetup#openFile
+Y2Autoinstall::Clients::AyastSetup::Builtins
+Y2Autoinstall::Clients::AyastSetup::Ops
+Y2Autoinstall::Clients::AyastSetup::Profile
+Y2Autoinstall::Clients::AyastSetup::SCR
+Y2Autoinstall::Clients::AyastSetup::WFM
 Y2Autoinstallation
 Y2Autoinstallation::ActivateCallbacks
 Y2Autoinstallation::ActivateCallbacks#crypt_keys_from_profile
@@ -42,6 +50,14 @@ Y2Autoinstallation::AutosetupHelpers#modified_profile?
 Y2Autoinstallation::AutosetupHelpers#probe_storage
 Y2Autoinstallation::AutosetupHelpers#readModified
 Y2Autoinstallation::AutosetupHelpers#suse_register
+Y2Autoinstallation::AutosetupHelpers::REGISTER_SECTION
+Y2Autoinstallation::Clients
+Y2Autoinstallation::Clients::InstAutoinit
+Y2Autoinstallation::Clients::InstAutoinit#initialize
+Y2Autoinstallation::Clients::InstAutoinit#run
+Y2Autoinstallation::Clients::InstAutoinit.run
+Y2Autoinstallation::Clients::InstAutosetupUpgrade
+Y2Autoinstallation::Clients::InstAutosetupUpgrade#main
 Y2Autoinstallation::Dialogs
 Y2Autoinstallation::Dialogs::DiskSelector
 Y2Autoinstallation::Dialogs::DiskSelector#abort_button
@@ -232,8 +248,10 @@ Yast::AutoinstFileClass#Write
 Yast::AutoinstFileClass#main
 Yast::AutoinstFunctions
 Yast::AutoinstFunctionsClass
+Yast::AutoinstFunctionsClass#available_base_products
 Yast::AutoinstFunctionsClass#check_second_stage_environment
 Yast::AutoinstFunctionsClass#main
+Yast::AutoinstFunctionsClass#reset_product
 Yast::AutoinstFunctionsClass#second_stage_required?
 Yast::AutoinstFunctionsClass#selected_product
 Yast::AutoinstGeneral
@@ -384,6 +402,7 @@ Yast::AutoinstStorageClass#general_settings=
 Yast::AutoinstStorageClass#handle_fstab
 Yast::AutoinstStorageClass#import_general_settings
 Yast::AutoinstStorageClass#main
+Yast::AutoinstStorageClass#proposal_settings
 Yast::AutoinstTestCloneClient
 Yast::AutoinstTestCloneClient#main
 Yast::AutoinstTestStageClient
@@ -400,9 +419,6 @@ Yast::AutoinstallAskInclude#createWidget
 Yast::AutoinstallAskInclude#initialize_autoinstall_ask
 Yast::AutoinstallAskInclude#path2pos
 Yast::AutoinstallAskInclude#user_input_with_countdown
-Yast::AutoinstallAutoinstDialogsInclude
-Yast::AutoinstallAutoinstDialogsInclude#ProfileSourceDialog
-Yast::AutoinstallAutoinstDialogsInclude#initialize_autoinstall_autoinst_dialogs
 Yast::AutoinstallClassesInclude
 Yast::AutoinstallClassesInclude#AddEditClasses
 Yast::AutoinstallClassesInclude#GetClassOrder
@@ -556,9 +572,7 @@ Yast::AutoyastClient#openFile
 Yast::AutoyastClient#runModule
 Yast::AyastSetupClient
 Yast::AyastSetupClient#GUI
-Yast::AyastSetupClient#Setup
 Yast::AyastSetupClient#main
-Yast::AyastSetupClient#openFile
 Yast::ClassesAutoClient
 Yast::ClassesAutoClient#main
 Yast::CloneSystemClient
@@ -583,8 +597,6 @@ Yast::InstAutoconfigureClient#removeNetwork
 Yast::InstAutoconfigureClient#wait_systemd_finished
 Yast::InstAutoimageClient
 Yast::InstAutoimageClient#main
-Yast::InstAutoinitClient
-Yast::InstAutoinitClient#main
 Yast::InstAutopostClient
 Yast::InstAutopostClient#Step
 Yast::InstAutopostClient#dirname
@@ -595,9 +607,6 @@ Yast::InstAutosetupClient#autosetup_security
 Yast::InstAutosetupClient#autosetup_users
 Yast::InstAutosetupClient#main
 Yast::InstAutosetupClient::Target
-Yast::InstAutosetupUpgradeClient
-Yast::InstAutosetupUpgradeClient#GetUpdateConf
-Yast::InstAutosetupUpgradeClient#main
 Yast::InstStoreUpgradeSoftwareClient
 Yast::InstStoreUpgradeSoftwareClient#main
 Yast::ModuleConfigBuilder

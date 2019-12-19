@@ -5,6 +5,7 @@ Registration::Addon#auto_selected?
 Registration::Addon#available?
 Registration::Addon#depends_on
 Registration::Addon#depends_on=
+Registration::Addon#eula_acceptance_needed?
 Registration::Addon#initialize
 Registration::Addon#label
 Registration::Addon#matches_remote_product?
@@ -42,6 +43,19 @@ Registration::AutoyastAddons#selected_addons
 Registration::Clients
 Registration::Clients::InstMigrationRepos
 Registration::Clients::InstMigrationRepos#main
+Registration::Clients::SCCAuto
+Registration::Clients::SCCAuto#change
+Registration::Clients::SCCAuto#export
+Registration::Clients::SCCAuto#import
+Registration::Clients::SCCAuto#initialize
+Registration::Clients::SCCAuto#modified
+Registration::Clients::SCCAuto#modified?
+Registration::Clients::SCCAuto#packages
+Registration::Clients::SCCAuto#read
+Registration::Clients::SCCAuto#reset
+Registration::Clients::SCCAuto#summary
+Registration::Clients::SCCAuto#write
+Registration::Clients::SCCAuto::CONTACTING_MESSAGE
 Registration::ConnectHelpers
 Registration::ConnectHelpers.add_update_hint
 Registration::ConnectHelpers.ask_import_ssl_certificate
@@ -320,8 +334,10 @@ Registration::SwMgmt.find_addon_updates
 Registration::SwMgmt.find_base_product
 Registration::SwMgmt.get_release_type
 Registration::SwMgmt.init
+Registration::SwMgmt.installed_base_product
 Registration::SwMgmt.installed_products
 Registration::SwMgmt.installer_update_base_product
+Registration::SwMgmt.online_base_product
 Registration::SwMgmt.product_installed?
 Registration::SwMgmt.product_label
 Registration::SwMgmt.product_selected?
@@ -330,6 +346,7 @@ Registration::SwMgmt.raise_pkg_exception
 Registration::SwMgmt.remote_product
 Registration::SwMgmt.remove_service
 Registration::SwMgmt.repository_data
+Registration::SwMgmt.resolvable_to_h
 Registration::SwMgmt.select_addon_products
 Registration::SwMgmt.select_default_product_patterns
 Registration::SwMgmt.select_product_addons
@@ -507,8 +524,5 @@ Yast::DiscoverRegistrationServicesClient#services
 Yast::InstSccClient
 Yast::InstSccClient#main
 Yast::InstSccClient::CONTACTING_MESSAGE
-Yast::SccAutoClient
-Yast::SccAutoClient#main
-Yast::SccAutoClient::CONTACTING_MESSAGE
 Yast::SccClient
 Yast::SccClient#main

@@ -33,6 +33,7 @@ Yast::AddOnAddOnWorkflowInclude#SetWizardWindowInProgress
 Yast::AddOnAddOnWorkflowInclude#Write
 Yast::AddOnAddOnWorkflowInclude#activate_addon_changes
 Yast::AddOnAddOnWorkflowInclude#initialize_add_on_add_on_workflow
+Yast::AddOnAddOnWorkflowInclude#media_type_selection
 Yast::AddOnAutoClient
 Yast::AddOnAutoClient#change
 Yast::AddOnAutoClient#export
@@ -50,6 +51,12 @@ Yast::AddOnMiscInclude
 Yast::AddOnMiscInclude#ContinueIfInsufficientMemory
 Yast::AddOnMiscInclude#HasInsufficientMemory
 Yast::AddOnMiscInclude#initialize_add_on_misc
+Yast::AddOnOthers
+Yast::AddOnOthersClass
+Yast::AddOnOthersClass#Export
+Yast::AddOnOthersClass#Read
+Yast::AddOnOthersClass#add_on_others
+Yast::AddOnOthersClass#main
 Yast::AddOnProposalClient
 Yast::AddOnProposalClient#main
 Yast::InstAddOnClient

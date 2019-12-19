@@ -157,12 +157,10 @@ Installation::SelectSystemRole
 Installation::SelectSystemRole#create_dialog
 Installation::SelectSystemRole#dialog_content
 Installation::SelectSystemRole#dialog_title
-Installation::SelectSystemRole#handle_event
 Installation::SelectSystemRole#help_text
 Installation::SelectSystemRole#initialize
 Installation::SelectSystemRole#next_handler
 Installation::SelectSystemRole#run
-Installation::SelectSystemRole::NON_OVERLAY_ATTRIBUTES
 Installation::Services
 Installation::Services.enabled
 Installation::Services.enabled=
@@ -343,8 +341,10 @@ Installation::Widgets::ProductSelector
 Installation::Widgets::ProductSelector#hspacing
 Installation::Widgets::ProductSelector#init
 Installation::Widgets::ProductSelector#initialize
+Installation::Widgets::ProductSelector#item_id
 Installation::Widgets::ProductSelector#items
 Installation::Widgets::ProductSelector#label
+Installation::Widgets::ProductSelector#offline_product_selected?
 Installation::Widgets::ProductSelector#product
 Installation::Widgets::ProductSelector#products
 Installation::Widgets::ProductSelector#registered?
@@ -424,7 +424,6 @@ Yast::ImageInstallationClass#SetOverallDeployingProgress
 Yast::ImageInstallationClass#SetRepo
 Yast::ImageInstallationClass#SetStartDownloadImageProgress
 Yast::ImageInstallationClass#StoreAllChanges
-Yast::ImageInstallationClass#ThisIsADebugMode
 Yast::ImageInstallationClass#TotalSize
 Yast::ImageInstallationClass#_DeployImage
 Yast::ImageInstallationClass#calculate_fs_size
@@ -437,6 +436,7 @@ Yast::InstAddonUpdateSourcesClient#KnownUrls
 Yast::InstAddonUpdateSourcesClient#UpdateUrls
 Yast::InstAddonUpdateSourcesClient#main
 Yast::InstComplexWelcomeClient
+Yast::InstComplexWelcomeClient#initialize
 Yast::InstComplexWelcomeClient#main
 Yast::InstComplexWelcomeClient::BETA_FILE
 Yast::InstCongratulateClient
@@ -537,6 +537,7 @@ Yast::InstSystemAnalysisClient#ActionHDDProbe
 Yast::InstSystemAnalysisClient#ActionUSB
 Yast::InstSystemAnalysisClient#FilesFromOlderSystems
 Yast::InstSystemAnalysisClient#InitInstallationRepositories
+Yast::InstSystemAnalysisClient#initialize
 Yast::InstSystemAnalysisClient#main
 Yast::InstUpdateInstaller
 Yast::InstUpdateInstaller#add_repository

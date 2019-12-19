@@ -259,6 +259,7 @@ Yast::UIShortcuts
 Yast::UIShortcuts::UI_TERMS
 Yast::WFM
 Yast::WFM#call
+Yast::WFM#self
 Yast::WFM.Args
 Yast::WFM.CallFunction
 Yast::WFM.ClientExists
@@ -281,6 +282,7 @@ Yast::Y2Logger#add
 Yast::Y2Logger#initialize
 Yast::Y2Logger::CALL_FRAME
 Yast::Y2StartHelpers
+Yast::Y2StartHelpers.application_title
 Yast::Y2StartHelpers.config_env
 Yast::Y2StartHelpers.help
 Yast::Y2StartHelpers.parse_arguments

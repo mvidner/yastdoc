@@ -49,6 +49,10 @@ Yast::OneClickInstallClass#ToXML
 Yast::OneClickInstallClass#fromXMLFriendly
 Yast::OneClickInstallClass#main
 Yast::OneClickInstallClass#makeXMLFriendly
+Yast::OneClickInstallClass#xml_from_file
+Yast::OneClickInstallClass#xpath_element
+Yast::OneClickInstallClass#xpath_match
+Yast::OneClickInstallClass#xpath_text
 Yast::OneClickInstallUIClient
 Yast::OneClickInstallUIClient#SetupWizard
 Yast::OneClickInstallUIClient#StringListToTermList

@@ -92,7 +92,6 @@ CFA::BaseModel#generic_set
 CFA::BaseModel#initialize
 CFA::BaseModel#load
 CFA::BaseModel#loaded?
-CFA::BaseModel#merge_changes
 CFA::BaseModel#modify
 CFA::BaseModel#save
 CFA::BaseModel#tree_value_change

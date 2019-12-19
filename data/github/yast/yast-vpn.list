@@ -151,6 +151,7 @@ Yast::IPSecConfModule#merge_into_customrules
 Yast::IPSecConfModule#merge_into_customrules_section
 Yast::IPSecConfModule#mkININode
 Yast::IPSecConfModule#remove_from_customrules
+Yast::IPSecConfModule#sysctl_file
 Yast::IPSecConfModule#uninstall_customrules
 Yast::IPSecConfModule::CUSTOMRULES_BAK_FILE
 Yast::IPSecConfModule::CUSTOMRULES_FILE

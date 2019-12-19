@@ -45,6 +45,7 @@ Yast::SecurityClass#Summary
 Yast::SecurityClass#Write
 Yast::SecurityClass#activate_changes
 Yast::SecurityClass#apply_new_settings
+Yast::SecurityClass#default_encrypt_method
 Yast::SecurityClass#display_manager
 Yast::SecurityClass#import_modules
 Yast::SecurityClass#init_settings
@@ -58,11 +59,19 @@ Yast::SecurityClass#read_missing_mandatory_services
 Yast::SecurityClass#read_pam_settings
 Yast::SecurityClass#read_permissions
 Yast::SecurityClass#read_polkit_settings
+Yast::SecurityClass#read_shadow_config
+Yast::SecurityClass#read_sysctl_value
+Yast::SecurityClass#shadow_config
+Yast::SecurityClass#sysctl_file
 Yast::SecurityClass#write_console_shutdown
 Yast::SecurityClass#write_kernel_settings
 Yast::SecurityClass#write_pam_settings
 Yast::SecurityClass#write_polkit_settings
+Yast::SecurityClass#write_shadow_config
+Yast::SecurityClass#write_sysctl_value
 Yast::SecurityClass#write_to_locations
+Yast::SecurityClass::SHADOW_ATTRS
+Yast::SecurityClass::SYSCTL_KEY_TO_METH
 Yast::SecurityClass::SYSCTL_VALUES
 Yast::SecurityClient
 Yast::SecurityClient#SecurityLevelHandler

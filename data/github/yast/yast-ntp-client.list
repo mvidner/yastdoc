@@ -48,6 +48,7 @@ Y2NtpClient::Dialog::Main#back_button
 Y2NtpClient::Dialog::Main#contents
 Y2NtpClient::Dialog::Main#hardware_clock_widgets
 Y2NtpClient::Dialog::Main#initialize
+Y2NtpClient::Dialog::Main#installation?
 Y2NtpClient::Dialog::Main#next_button
 Y2NtpClient::Dialog::Main#run
 Y2NtpClient::Dialog::Main#title
@@ -189,12 +190,13 @@ Yast::NtpClientClass#progress?
 Yast::NtpClientClass#reachable_ntp_server?
 Yast::NtpClientClass#read_ntp_conf
 Yast::NtpClientClass#sync_once
-Yast::NtpClientClass::CRON_FILE
 Yast::NtpClientClass::DEFAULT_NTP_POLICY
 Yast::NtpClientClass::DEFAULT_SYNC_INTERVAL
 Yast::NtpClientClass::NTP_FILE
 Yast::NtpClientClass::RANDOM_POOL_NTP_SERVERS
 Yast::NtpClientClass::REQUIRED_PACKAGE
+Yast::NtpClientClass::TIMER_FILE
+Yast::NtpClientClass::TIMER_PATH
 Yast::NtpClientClass::UNSUPPORTED_AUTOYAST_OPTIONS
 Yast::NtpClientClient
 Yast::NtpClientClient#GuiHandler

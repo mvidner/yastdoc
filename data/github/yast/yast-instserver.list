@@ -44,7 +44,7 @@ Yast::InstserverClass#main
 Yast::InstserverClass#socket
 Yast::InstserverClass#subreplace
 Yast::InstserverClass#vsftpd_is_standalone
-Yast::InstserverClass::NFS_SERVER_SEVICE
+Yast::InstserverClass::NFS_SERVER_SERVICE
 Yast::InstserverClient
 Yast::InstserverClient#main
 Yast::InstserverComplexInclude
