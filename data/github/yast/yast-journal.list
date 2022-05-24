@@ -1,4 +1,6 @@
 Y2Journal
+Y2Journal::CLI
+Y2Journal::CLI.run
 Y2Journal::EntriesDialog
 Y2Journal::EntriesDialog#dialog_content
 Y2Journal::EntriesDialog#dialog_options

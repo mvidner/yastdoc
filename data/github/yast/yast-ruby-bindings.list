@@ -129,6 +129,7 @@ Yast::Debugger
 Yast::Debugger.installed?
 Yast::Debugger.start
 Yast::Debugger.start_from_env
+Yast::Debugger.unwanted?
 Yast::Exportable
 Yast::Exportable#publish
 Yast::Exportable#published_functions
@@ -221,6 +222,8 @@ Yast::Profiler.start_from_env
 Yast::Profiler.stop
 Yast::Profiler::RESULT_PATH
 Yast::RSpec
+Yast::RSpec::Helpers
+Yast::RSpec::Helpers.define_yast_module
 Yast::RSpec::Matchers
 Yast::RSpec::Matchers#path_matching
 Yast::RSpec::SCR
@@ -284,8 +287,12 @@ Yast::Y2Logger::CALL_FRAME
 Yast::Y2StartHelpers
 Yast::Y2StartHelpers.application_title
 Yast::Y2StartHelpers.config_env
+Yast::Y2StartHelpers.generate_exit_code
 Yast::Y2StartHelpers.help
 Yast::Y2StartHelpers.parse_arguments
 Yast::Y2StartHelpers.setup_signals
+Yast::Y2StartHelpers::FAILED_SYMBOLS
 Yast::Y2StartHelpers::LOG_LOCATIONS
+Yast::Y2StartHelpers::RES_CLIENT_RESULT
+Yast::Y2StartHelpers::RES_OK
 Yast::YReference

@@ -36,6 +36,7 @@ Yast::PrinterClass#Read
 Yast::PrinterClass#RunHpsetup
 Yast::PrinterClass#TestClientOnlyServer
 Yast::PrinterClass#Write
+Yast::PrinterClass#enabled?
 Yast::PrinterClass#main
 Yast::PrinterClient
 Yast::PrinterClient#main

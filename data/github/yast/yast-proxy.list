@@ -24,6 +24,8 @@ Yast::ProxyClass#no
 Yast::ProxyClass#no=
 Yast::ProxyClass#no_proxy_domains
 Yast::ProxyClass#no_proxy_domains=
+Yast::ProxyClass#to_target
+Yast::ProxyClass#to_target=
 Yast::ProxyClient
 Yast::ProxyClient#AuthHandler
 Yast::ProxyClient#DisableHandler

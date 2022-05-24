@@ -1,3 +1,8 @@
+Y2Slp
+Y2Slp::Clients
+Y2Slp::Clients::SlpServer
+Y2Slp::Clients::SlpServer#initialize
+Y2Slp::Clients::SlpServer#main
 Yast
 Yast::SlpServer
 Yast::SlpServerAutoClient
@@ -21,8 +26,6 @@ Yast::SlpServerClass#main
 Yast::SlpServerClass#save_settings
 Yast::SlpServerClass#save_status
 Yast::SlpServerClass#service
-Yast::SlpServerClient
-Yast::SlpServerClient#main
 Yast::SlpServerComplexInclude
 Yast::SlpServerComplexInclude#Modified
 Yast::SlpServerComplexInclude#PollAbort

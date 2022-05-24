@@ -56,10 +56,8 @@ Yast::NisServerRoutinesInclude
 Yast::NisServerRoutinesInclude#CheckForDHCPClient
 Yast::NisServerRoutinesInclude#GetFirewallWidget
 Yast::NisServerRoutinesInclude#SlaveExists
-Yast::NisServerRoutinesInclude#hasMasterThisSlave
 Yast::NisServerRoutinesInclude#initialize_nis_server_routines
 Yast::NisServerRoutinesInclude#isYPServerConfigured
-Yast::NisServerRoutinesInclude#toboolean
 Yast::NisServerSecurenetsInclude
 Yast::NisServerSecurenetsInclude#ItemizeSecurenets
 Yast::NisServerSecurenetsInclude#MergeNetsEntries
@@ -77,7 +75,6 @@ Yast::NisServerSlavesInclude#initialize_nis_server_slaves
 Yast::NisServerUiInclude
 Yast::NisServerUiInclude#DetailsPopup
 Yast::NisServerUiInclude#ExitPopup
-Yast::NisServerUiInclude#FinishPopup
 Yast::NisServerUiInclude#InstallServer
 Yast::NisServerUiInclude#ReadDialog
 Yast::NisServerUiInclude#ResultPopup

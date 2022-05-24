@@ -76,6 +76,7 @@ Yast::IscsiClientLibClass#getiBFT
 Yast::IscsiClientLibClass#hidePassword
 Yast::IscsiClientLibClass#iBFT?
 Yast::IscsiClientLibClass#ipEqual?
+Yast::IscsiClientLibClass#iscsiuio_relevant?
 Yast::IscsiClientLibClass#loginIntoTarget
 Yast::IscsiClientLibClass#main
 Yast::IscsiClientLibClass#nodeInfoToMap

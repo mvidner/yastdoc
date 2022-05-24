@@ -4,7 +4,6 @@ Yast::AddOnAddOnWorkflowInclude#AddAddOnToStore
 Yast::AddOnAddOnWorkflowInclude#AdjustInfoWidget
 Yast::AddOnAddOnWorkflowInclude#AdjustRepositoryInfo
 Yast::AddOnAddOnWorkflowInclude#CatalogSelect
-Yast::AddOnAddOnWorkflowInclude#CheckCompliance
 Yast::AddOnAddOnWorkflowInclude#CreateAddOnsOverviewDialog
 Yast::AddOnAddOnWorkflowInclude#GetAllProductsInfo
 Yast::AddOnAddOnWorkflowInclude#GetInstalledProducts
@@ -34,10 +33,12 @@ Yast::AddOnAddOnWorkflowInclude#Write
 Yast::AddOnAddOnWorkflowInclude#activate_addon_changes
 Yast::AddOnAddOnWorkflowInclude#initialize_add_on_add_on_workflow
 Yast::AddOnAddOnWorkflowInclude#media_type_selection
+Yast::AddOnAddOnWorkflowInclude::@@media_addons_selected
 Yast::AddOnAutoClient
 Yast::AddOnAutoClient#change
 Yast::AddOnAutoClient#export
 Yast::AddOnAutoClient#import
+Yast::AddOnAutoClient#initialize
 Yast::AddOnAutoClient#modified
 Yast::AddOnAutoClient#modified?
 Yast::AddOnAutoClient#read
@@ -47,6 +48,7 @@ Yast::AddOnAutoClient#summary
 Yast::AddOnAutoClient#write
 Yast::AddOnClient
 Yast::AddOnClient#main
+Yast::AddOnClient#run_GUI
 Yast::AddOnMiscInclude
 Yast::AddOnMiscInclude#ContinueIfInsufficientMemory
 Yast::AddOnMiscInclude#HasInsufficientMemory

@@ -160,6 +160,7 @@ Yast::ServicesManagerServiceClass#read
 Yast::ServicesManagerServiceClass#reload
 Yast::ServicesManagerServiceClass#reset
 Yast::ServicesManagerServiceClass#save
+Yast::ServicesManagerServiceClass#select_exportable_services
 Yast::ServicesManagerServiceClass#services
 Yast::ServicesManagerServiceClass#services=
 Yast::ServicesManagerServiceClass#set_start_mode

@@ -180,6 +180,7 @@ Yast::NtpClientClass#ReadSynchronization
 Yast::NtpClientClass#Summary
 Yast::NtpClientClass#TestNtpServer
 Yast::NtpClientClass#Write
+Yast::NtpClientClass#country_ntp_servers
 Yast::NtpClientClass#dhcp_ntp_servers
 Yast::NtpClientClass#go_next
 Yast::NtpClientClass#main
@@ -187,6 +188,7 @@ Yast::NtpClientClass#merge_to_system
 Yast::NtpClientClass#ntp_conf
 Yast::NtpClientClass#ntp_test
 Yast::NtpClientClass#progress?
+Yast::NtpClientClass#public_ntp_servers
 Yast::NtpClientClass#reachable_ntp_server?
 Yast::NtpClientClass#read_ntp_conf
 Yast::NtpClientClass#sync_once

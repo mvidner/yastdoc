@@ -35,6 +35,7 @@ Packaging::Configuration#package_name
 Packaging::Configuration#package_name=
 Packaging::Configuration#skip_license_check
 Packaging::Configuration#skip_license_check=
+Packaging::Configuration#summary
 Packaging::Configuration#version
 Packaging::Configuration#version=
 Packaging::GitHelpers

@@ -52,6 +52,8 @@ Yast::FcoeClientClass#WriteCfgFiles
 Yast::FcoeClientClass#WriteFcoeConfig
 Yast::FcoeClientClass#WriteOnly
 Yast::FcoeClientClass#WriteSysconfigFiles
+Yast::FcoeClientClass#fcoe_vlan
+Yast::FcoeClientClass#fcoe_vlan?
 Yast::FcoeClientClass#fcoemonSocketActive?
 Yast::FcoeClientClass#fcoemonSocketDisable
 Yast::FcoeClientClass#fcoemonSocketDisabled?

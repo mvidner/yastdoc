@@ -9,6 +9,7 @@ CFA::Grub2::Default#os_prober
 CFA::Grub2::Default#recovery_entry
 CFA::Grub2::Default#recovery_params
 CFA::Grub2::Default#save
+CFA::Grub2::Default#savedefault
 CFA::Grub2::Default#serial_console
 CFA::Grub2::Default#serial_console=
 CFA::Grub2::Default#terminal
