@@ -863,6 +863,10 @@ Y2Network::Driver#write_options
 Y2Network::Driver.commit
 Y2Network::Driver.from_system
 Y2Network::Driver.write_options
+Y2Network::FcoeConnGenerator
+Y2Network::FcoeConnGenerator#config
+Y2Network::FcoeConnGenerator#initialize
+Y2Network::FcoeConnGenerator#update_connections_for
 Y2Network::HardwareWrapper
 Y2Network::HardwareWrapper#initialize
 Y2Network::HardwareWrapper#netcards

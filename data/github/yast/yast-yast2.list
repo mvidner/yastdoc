@@ -2493,6 +2493,7 @@ Yast::PackageClass#InstallMsg
 Yast::PackageClass#Installed
 Yast::PackageClass#InstalledAll
 Yast::PackageClass#InstalledAny
+Yast::PackageClass#IsTransactionalSystem
 Yast::PackageClass#LastOperationCanceled
 Yast::PackageClass#PackageAvailable
 Yast::PackageClass#PackageDialog
@@ -2501,6 +2502,7 @@ Yast::PackageClass#Remove
 Yast::PackageClass#RemoveAll
 Yast::PackageClass#RemoveAllMsg
 Yast::PackageClass#RemoveMsg
+Yast::PackageClass#by_pattern
 Yast::PackageClass#main
 Yast::PackageClass#reset
 Yast::PackageKit

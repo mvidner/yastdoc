@@ -178,6 +178,7 @@ SapHA::Configuration::Watchdog#description
 SapHA::Configuration::Watchdog#initialize
 SapHA::Configuration::Watchdog#loaded
 SapHA::Configuration::Watchdog#proposals
+SapHA::Configuration::Watchdog#refresh_proposals
 SapHA::Configuration::Watchdog#remove_from_config
 SapHA::Configuration::Watchdog#to_install
 SapHA::Configuration::Watchdog#validate
@@ -244,6 +245,7 @@ SapHA::HAConfiguration#platform=
 SapHA::HAConfiguration#product
 SapHA::HAConfiguration#product_id
 SapHA::HAConfiguration#product_name
+SapHA::HAConfiguration#refresh_all_proposals
 SapHA::HAConfiguration#role
 SapHA::HAConfiguration#role=
 SapHA::HAConfiguration#scenario
@@ -371,7 +373,6 @@ SapHA::System::HanaClass#hdbsql_command
 SapHA::System::HanaClass#make_backup
 SapHA::System::HanaClass#set_secute_store
 SapHA::System::HanaClass#version
-SapHA::System::HanaClass#write_sr_hook
 SapHA::System::HanaClass::HANA_GLOBAL_INI
 SapHA::System::Host
 SapHA::System::Host#connect

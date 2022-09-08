@@ -271,6 +271,7 @@ Registration::SslCertificate#issued_on
 Registration::SslCertificate#issuer_name
 Registration::SslCertificate#issuer_organization
 Registration::SslCertificate#issuer_organization_unit
+Registration::SslCertificate#log_details
 Registration::SslCertificate#serial
 Registration::SslCertificate#subject_name
 Registration::SslCertificate#subject_organization
@@ -279,6 +280,7 @@ Registration::SslCertificate#valid_yet?
 Registration::SslCertificate#x509_cert
 Registration::SslCertificate.default_certificate_path
 Registration::SslCertificate.download
+Registration::SslCertificate.import_from_system
 Registration::SslCertificate.load
 Registration::SslCertificate.load_file
 Registration::SslCertificate.update_instsys_ca

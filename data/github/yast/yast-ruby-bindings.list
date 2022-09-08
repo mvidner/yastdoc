@@ -290,6 +290,7 @@ Yast::Y2StartHelpers.config_env
 Yast::Y2StartHelpers.generate_exit_code
 Yast::Y2StartHelpers.help
 Yast::Y2StartHelpers.parse_arguments
+Yast::Y2StartHelpers.redirect_scr
 Yast::Y2StartHelpers.setup_signals
 Yast::Y2StartHelpers::FAILED_SYMBOLS
 Yast::Y2StartHelpers::LOG_LOCATIONS
