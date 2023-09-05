@@ -344,6 +344,7 @@ SapHA::SemanticChecks#unique
 SapHA::SemanticChecks#verbose_check
 SapHA::SemanticChecks::IDENTIFIER_REGEXP
 SapHA::SemanticChecks::RESERVED_SAP_SIDS
+SapHA::SemanticChecks::SAP_INST_NUM_REGEX
 SapHA::SemanticChecks::SAP_SID_REGEXP
 SapHA::System
 SapHA::System::Connectivity

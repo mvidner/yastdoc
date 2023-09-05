@@ -121,6 +121,7 @@ Y2Network::Autoinst::Config#keep_install_network
 Y2Network::Autoinst::Config#keep_install_network=
 Y2Network::Autoinst::Config#managed
 Y2Network::Autoinst::Config#managed=
+Y2Network::Autoinst::Config#selected_backend
 Y2Network::Autoinst::Config#start_immediately
 Y2Network::Autoinst::Config#start_immediately=
 Y2Network::Autoinst::Config#virt_bridge_proposal
@@ -438,6 +439,7 @@ Y2Network::Backend#id
 Y2Network::Backend#initialize
 Y2Network::Backend#label
 Y2Network::Backend#name
+Y2Network::Backend#packages
 Y2Network::Backend#to_s
 Y2Network::Backend.all
 Y2Network::Backend.available
@@ -446,9 +448,11 @@ Y2Network::Backends
 Y2Network::Backends::Netconfig
 Y2Network::Backends::Netconfig#initialize
 Y2Network::Backends::Netconfig#label
+Y2Network::Backends::Netconfig#packages
 Y2Network::Backends::NetworkManager
 Y2Network::Backends::NetworkManager#initialize
 Y2Network::Backends::NetworkManager#label
+Y2Network::Backends::NetworkManager#packages
 Y2Network::Backends::None
 Y2Network::Backends::None#available?
 Y2Network::Backends::None#initialize
@@ -456,6 +460,7 @@ Y2Network::Backends::None#label
 Y2Network::Backends::Wicked
 Y2Network::Backends::Wicked#initialize
 Y2Network::Backends::Wicked#label
+Y2Network::Backends::Wicked#packages
 Y2Network::Bitrate
 Y2Network::Bitrate#<=>
 Y2Network::Bitrate#initialize
@@ -870,6 +875,10 @@ Y2Network::FcoeConnGenerator#update_connections_for
 Y2Network::HardwareWrapper
 Y2Network::HardwareWrapper#initialize
 Y2Network::HardwareWrapper#netcards
+Y2Network::Helpers
+Y2Network::Helpers#copy_to_target
+Y2Network::Helpers#inst_dir
+Y2Network::Helpers::ROOT_PATH
 Y2Network::Hostname
 Y2Network::Hostname#current_static
 Y2Network::Hostname#dhcp_hostname
@@ -928,6 +937,9 @@ Y2Network::Interface#config
 Y2Network::Interface#connected?
 Y2Network::Interface#drivers
 Y2Network::Interface#eql?
+Y2Network::Interface#firmware_configured?
+Y2Network::Interface#firmware_configured_by
+Y2Network::Interface#firmware_configured_by=
 Y2Network::Interface#hardware
 Y2Network::Interface#hash
 Y2Network::Interface#hotplug?
@@ -1102,6 +1114,9 @@ Y2Network::IssuesResult#initialize
 Y2Network::IssuesResult#issues
 Y2Network::IssuesResult#issues?
 Y2Network::NetworkManager
+Y2Network::NetworkManager::ConfigCopier
+Y2Network::NetworkManager::ConfigCopier#copy
+Y2Network::NetworkManager::ConfigCopier::NETWORK_MANAGER_PATH
 Y2Network::NetworkManager::ConfigWriter
 Y2Network::NetworkManager::ConnectionConfigWriter
 Y2Network::NetworkManager::ConnectionConfigWriter#write
@@ -1393,6 +1408,12 @@ Y2Network::VirtualizationConfig#config
 Y2Network::VirtualizationConfig#create
 Y2Network::VirtualizationConfig#initialize
 Y2Network::Wicked
+Y2Network::Wicked::ConfigCopier
+Y2Network::Wicked::ConfigCopier#copy
+Y2Network::Wicked::ConfigCopier::SYSCONFIG
+Y2Network::Wicked::ConfigCopier::WICKED_DHCP_PATH
+Y2Network::Wicked::ConfigCopier::WICKED_ENTRIES
+Y2Network::Wicked::ConfigCopier::WICKED_PATH
 Y2Network::Wicked::ConfigReader
 Y2Network::Wicked::ConfigReader#read
 Y2Network::Wicked::ConfigReader#read_connections
@@ -1551,10 +1572,8 @@ Y2Network::Widgets::BootProtocol#contents
 Y2Network::Widgets::BootProtocol#dynamic_enabled
 Y2Network::Widgets::BootProtocol#handle
 Y2Network::Widgets::BootProtocol#help
-Y2Network::Widgets::BootProtocol#ibft_available?
 Y2Network::Widgets::BootProtocol#init
 Y2Network::Widgets::BootProtocol#initialize
-Y2Network::Widgets::BootProtocol#none_enabled
 Y2Network::Widgets::BootProtocol#static_enabled
 Y2Network::Widgets::BootProtocol#store
 Y2Network::Widgets::BootProtocol#valid_netmask
@@ -1593,9 +1612,9 @@ Y2Network::Widgets::ClientKeyPath#initialize
 Y2Network::Widgets::ClientKeyPath#label
 Y2Network::Widgets::ClientKeyPath#store
 Y2Network::Widgets::DeleteInterface
+Y2Network::Widgets::DeleteInterface#disable?
 Y2Network::Widgets::DeleteInterface#handle
 Y2Network::Widgets::DeleteInterface#help
-Y2Network::Widgets::DeleteInterface#init
 Y2Network::Widgets::DeleteInterface#initialize
 Y2Network::Widgets::DeleteInterface#label
 Y2Network::Widgets::DeleteRoute
@@ -1657,12 +1676,11 @@ Y2Network::Widgets::EapUser#initialize
 Y2Network::Widgets::EapUser#label
 Y2Network::Widgets::EapUser#store
 Y2Network::Widgets::EditInterface
+Y2Network::Widgets::EditInterface#disable?
 Y2Network::Widgets::EditInterface#handle
 Y2Network::Widgets::EditInterface#help
-Y2Network::Widgets::EditInterface#init
 Y2Network::Widgets::EditInterface#initialize
 Y2Network::Widgets::EditInterface#label
-Y2Network::Widgets::EditInterface#selected_interface
 Y2Network::Widgets::EditRoute
 Y2Network::Widgets::EditRoute#handle
 Y2Network::Widgets::EditRoute#init
@@ -1742,6 +1760,14 @@ Y2Network::Widgets::IfplugdPriority#label
 Y2Network::Widgets::IfplugdPriority#maximum
 Y2Network::Widgets::IfplugdPriority#minimum
 Y2Network::Widgets::IfplugdPriority#store
+Y2Network::Widgets::InterfaceButton
+Y2Network::Widgets::InterfaceButton#config
+Y2Network::Widgets::InterfaceButton#connection_config
+Y2Network::Widgets::InterfaceButton#disable?
+Y2Network::Widgets::InterfaceButton#init
+Y2Network::Widgets::InterfaceButton#initialize
+Y2Network::Widgets::InterfaceButton#item
+Y2Network::Widgets::InterfaceButton#selected_interface
 Y2Network::Widgets::InterfaceDescription
 Y2Network::Widgets::InterfaceName
 Y2Network::Widgets::InterfaceName#help
@@ -1764,6 +1790,7 @@ Y2Network::Widgets::InterfaceType#label
 Y2Network::Widgets::InterfaceType#result
 Y2Network::Widgets::InterfaceType#store
 Y2Network::Widgets::InterfacesTable
+Y2Network::Widgets::InterfacesTable#add_handler
 Y2Network::Widgets::InterfacesTable#handle
 Y2Network::Widgets::InterfacesTable#header
 Y2Network::Widgets::InterfacesTable#help
@@ -2511,6 +2538,7 @@ Yast::Routing
 Yast::RoutingClass
 Yast::RoutingClass#main
 Yast::SaveNetworkClient
+Yast::SaveNetworkClient#initialize
 Yast::SaveNetworkClient#main
 Yast::SetupDhcp
 Yast::SetupDhcp#main
@@ -2518,6 +2546,9 @@ Yast::SetupDhcp#set_dhcp_hostname!
 Yast::SetupDhcp#set_dhcp_hostname?
 Yast::SetupDhcp#set_hostname_used?
 Yast::Wicked
+Yast::Wicked#firmware_configured_by?
+Yast::Wicked#firmware_interfaces
+Yast::Wicked#firmware_interfaces_by_extension
 Yast::Wicked#ibft_interfaces
 Yast::Wicked#parse_hostname
 Yast::Wicked#parse_ntp_servers
@@ -2526,3 +2557,4 @@ Yast::Wicked#reload_config
 Yast::Wicked::BASH_OUTPUT_PATH
 Yast::Wicked::BASH_PATH
 Yast::Wicked::IBFT_CMD
+Yast::Wicked::WICKED_PATH

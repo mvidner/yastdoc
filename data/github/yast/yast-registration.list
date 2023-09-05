@@ -353,6 +353,8 @@ Registration::Storage::InstallationOptions#custom_url
 Registration::Storage::InstallationOptions#custom_url=
 Registration::Storage::InstallationOptions#email
 Registration::Storage::InstallationOptions#email=
+Registration::Storage::InstallationOptions#force_registration
+Registration::Storage::InstallationOptions#force_registration=
 Registration::Storage::InstallationOptions#imported_cert_sha256_fingerprint
 Registration::Storage::InstallationOptions#imported_cert_sha256_fingerprint=
 Registration::Storage::InstallationOptions#initialize
@@ -362,6 +364,8 @@ Registration::Storage::InstallationOptions#reg_code
 Registration::Storage::InstallationOptions#reg_code=
 Registration::Storage::InstallationOptions#selected_addons
 Registration::Storage::InstallationOptions#selected_addons=
+Registration::Storage::InstallationOptions#yaml_product
+Registration::Storage::InstallationOptions#yaml_product=
 Registration::Storage::RegCodes
 Registration::Storage::RegCodes#initialize
 Registration::Storage::RegCodes#reg_codes
@@ -601,6 +605,10 @@ Registration::Widgets::TogglePackageSelection#enabled=
 Registration::Widgets::TogglePackageSelection#initialize
 Registration::Widgets::TogglePackageSelection#label
 Registration::Widgets::TogglePackageSelection#opt
+Registration::YamlProductsReader
+Registration::YamlProductsReader#initialize
+Registration::YamlProductsReader#path
+Registration::YamlProductsReader#read
 Yast
 Yast::DiscoverRegistrationServicesClient
 Yast::DiscoverRegistrationServicesClient#initialize

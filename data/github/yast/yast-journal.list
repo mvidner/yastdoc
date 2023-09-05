@@ -70,6 +70,7 @@ Y2Journal::QueryPresenter.default_since
 Y2Journal::QueryPresenter.default_until
 Y2Journal::QueryPresenter.filters
 Y2Journal::QueryPresenter.intervals
+Y2Journal::QueryPresenter.localize_interval
 Y2Journal::QueryPresenter::TIME_FORMAT
 Y2Journal::TimeHelpers
 Y2Journal::TimeHelpers#date_widget_for

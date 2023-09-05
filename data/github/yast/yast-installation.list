@@ -274,7 +274,9 @@ Installation::SecuritySettings#open_vnc!
 Installation::SecuritySettings#open_vnc=
 Installation::SecuritySettings#polkit_default_privileges
 Installation::SecuritySettings#polkit_default_privileges=
+Installation::SecuritySettings#propose
 Installation::SecuritySettings#propose_lsm_config
+Installation::SecuritySettings#reset_proposal
 Installation::SecuritySettings.create_instance
 Installation::SecuritySettings.instance
 Installation::SecuritySettings.run
@@ -795,6 +797,7 @@ Yast::InstallationInstIncAllInclude#SetGlobalInstallationFeatures
 Yast::InstallationInstIncAllInclude#SetInitializingUI
 Yast::InstallationInstIncAllInclude#SetUIContent
 Yast::InstallationInstIncAllInclude#ShowTextFallbackMessage
+Yast::InstallationInstIncAllInclude#connect_nbft
 Yast::InstallationInstIncAllInclude#initialize_installation_inst_inc_all
 Yast::InstallationInstIncAllInclude#retranslateWizardDialog
 Yast::InstallationInstIncFirstInclude

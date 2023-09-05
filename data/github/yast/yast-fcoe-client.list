@@ -52,6 +52,7 @@ Yast::FcoeClientClass#WriteCfgFiles
 Yast::FcoeClientClass#WriteFcoeConfig
 Yast::FcoeClientClass#WriteOnly
 Yast::FcoeClientClass#WriteSysconfigFiles
+Yast::FcoeClientClass#[]
 Yast::FcoeClientClass#fcoe_vlan
 Yast::FcoeClientClass#fcoe_vlan?
 Yast::FcoeClientClass#fcoemonSocketActive?
@@ -71,7 +72,6 @@ Yast::FcoeClientClass#lldpadSocketStop
 Yast::FcoeClientClass#main
 Yast::FcoeClientClass::FCOE_PKG_NAME
 Yast::FcoeClientClass::Interface
-Yast::FcoeClientClass::Interface#[]
 Yast::FcoeClientClient
 Yast::FcoeClientClient#main
 Yast::FcoeClientComplexInclude

@@ -23,7 +23,6 @@ Yast::OnlineUpdateCallbacksClass#ProgressDeltaApply
 Yast::OnlineUpdateCallbacksClass#ProgressDeltaDownload
 Yast::OnlineUpdateCallbacksClass#ProgressDownloadCallback
 Yast::OnlineUpdateCallbacksClass#ProgressLog
-Yast::OnlineUpdateCallbacksClass#RefreshAllSources
 Yast::OnlineUpdateCallbacksClass#RefreshSources
 Yast::OnlineUpdateCallbacksClass#RegisterOnlineUpdateCallbacks
 Yast::OnlineUpdateCallbacksClass#ScriptFinish

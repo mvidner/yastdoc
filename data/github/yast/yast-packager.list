@@ -89,6 +89,7 @@ Y2Packager::KnownRepositories::STATUS_FILE
 Y2Packager::LibzyppProductSpec
 Y2Packager::LibzyppProductSpec#select
 Y2Packager::MediumType
+Y2Packager::MediumType.detected_type
 Y2Packager::MediumType.offline?
 Y2Packager::MediumType.online?
 Y2Packager::MediumType.skip_step?
@@ -302,6 +303,7 @@ Yast::CheckmediaUiInclude#RequireFirstMedium
 Yast::CheckmediaUiInclude#SetButtonState
 Yast::CheckmediaUiInclude#TranslateInfo
 Yast::CheckmediaUiInclude#initialize_checkmedia_ui
+Yast::CheckmediaUiInclude#medium_readable?
 Yast::DefaultDesktop
 Yast::DefaultDesktopClass
 Yast::DefaultDesktopClass#Description
@@ -587,6 +589,7 @@ Yast::PackagesClass::FIPS_PATTERN
 Yast::PackagesClass::GRAPHIC_PACKAGES
 Yast::PackagesClass::LOG_RESOLVABLE_STATUS
 Yast::PackagesClass::LOG_RESOLVABLE_TRANSACT_BY
+Yast::PackagesClass::NBFT_PACKAGES
 Yast::PackagesClass::REMOTE_X11_BASE_TAGS
 Yast::PackagesClass::RESOLVABLE_TYPES
 Yast::PackagesClass::VNC_BASE_TAGS

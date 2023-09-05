@@ -228,6 +228,7 @@ Y2Autoinstallation::AutosetupHelpers
 Y2Autoinstallation::AutosetupHelpers#autosetup_country
 Y2Autoinstallation::AutosetupHelpers#autosetup_firewall
 Y2Autoinstallation::AutosetupHelpers#autosetup_network
+Y2Autoinstallation::AutosetupHelpers#autosetup_security_policy
 Y2Autoinstallation::AutosetupHelpers#modified_profile?
 Y2Autoinstallation::AutosetupHelpers#network_before_proposal?
 Y2Autoinstallation::AutosetupHelpers#probe_storage
